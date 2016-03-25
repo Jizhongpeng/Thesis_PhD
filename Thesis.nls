@@ -1,0 +1,134 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{$ \alpha'$}]\begingroup Refocusing factor\nomeqref {3.14}
+		\nompageref{173}
+  \item [{$\Delta S$}]\begingroup Area of the emitting source\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\delta x$}]\begingroup Rayleigh distance\nomeqref {4.19}
+		\nompageref{213}
+  \item [{$\Delta$}]\begingroup Thickness function\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\delta\theta$}]\begingroup Angular resolution\nomeqref {3.14}
+		\nompageref{173}
+  \item [{$\epsilon$}]\begingroup Electrical permittivity\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\eta, \chi$}]\begingroup Object space coordinates\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\Gamma$}]\begingroup Autocorrelation function\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\iota$}]\begingroup Incoherence degree\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\lambda$}]\begingroup Wavelength of the light\nomeqref {1.0}
+		\nompageref{45}
+  \item [{$\mu$}]\begingroup Magnetic permittivity\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\nabla$}]\begingroup Laplacian operator\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\nu$}]\begingroup Optical frequency\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\nu_c$}]\begingroup Optical cut-off frequency\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\nu_x, \nu_y$}]\begingroup Local spatial frequencies\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\overrightarrow{E}$}]\begingroup Electric field\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\overrightarrow{H}$}]\begingroup Magnetic field\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\overrightarrow{X}$}]\begingroup Vector representing the ray of light\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$\phi$}]\begingroup Phase\nomeqref {2.104}\nompageref{140}
+  \item [{$\sigma$}]\begingroup Area of the aperture\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\tau$}]\begingroup Coherence time\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$\theta$}]\begingroup Angular coordinate\nomeqref {1.0}
+		\nompageref{46}
+  \item [{$\widehat{i},\widehat{j}$, $\widehat{k}$}]\begingroup unit vectors\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$A$}]\begingroup Area\nomeqref {2.104}\nompageref{140}
+  \item [{$A$}]\begingroup Transformation matrix\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$a$}]\begingroup Distance from the main lens image to the micro array\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$A'$}]\begingroup Synthetic aperture\nomeqref {3.14}
+		\nompageref{173}
+  \item [{$A^{-1}$}]\begingroup Transformation matrix\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$b$}]\begingroup Distance from the micro array to the sensor\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$C$}]\begingroup Coherence index\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$c$}]\begingroup Speed of light in vacuum\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$D$}]\begingroup Aperture diameter of the main lens\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$d$}]\begingroup Aperture diameter\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$d\Sigma$}]\begingroup Elemental area\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$d_c$}]\begingroup Distance of propagation in the coherence algorithm\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$d_{Airy}$}]\begingroup Airy disk diameter\nomeqref {3.14}
+		\nompageref{173}
+  \item [{$E$}]\begingroup Radiance\nomeqref {1.23}\nompageref{78}
+  \item [{$F$}]\begingroup Main lens - micro array distance\nomeqref {3.14}
+		\nompageref{173}
+  \item [{$f$}]\begingroup Focal length of the main lens\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$F'$}]\begingroup Main lens - synthetic focal plane distance\nomeqref {3.14}
+		\nompageref{173}
+  \item [{$F_\#$}]\begingroup F-number\nomeqref {2.104}\nompageref{140}
+  \item [{$f_x, f_y$}]\begingroup Spatial frequencies\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$f_{\mu}$}]\begingroup Focal length of the micro lens\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$H$}]\begingroup Optical transfer function\nomeqref {4.19}
+		\nompageref{213}
+  \item [{$h$}]\begingroup Impulse response\nomeqref {4.19}
+		\nompageref{213}
+  \item [{$I$}]\begingroup Intensity of the optical field\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$k$}]\begingroup Wave number\nomeqref {2.104}\nompageref{140}
+  \item [{$L$}]\begingroup Light Field\nomeqref {1.23}\nompageref{78}
+  \item [{$m$}]\begingroup Magnification\nomeqref {1.23}\nompageref{78}
+  \item [{$N$}]\begingroup Number of samples\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$n$}]\begingroup Refractive index\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$N_{sub}$}]\begingroup Sub-image resolution\nomeqref {3.14}
+		\nompageref{173}
+  \item [{$NA$}]\begingroup Numerical aperture\nomeqref {5.2}
+		\nompageref{235}
+  \item [{$r$}]\begingroup Radius of a lens aperture\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$t$}]\begingroup Time\nomeqref {2.104}\nompageref{140}
+  \item [{$t_{lens}$}]\begingroup Transmission of the lens\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$U$}]\begingroup Complex field\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$u$}]\begingroup Directional coordinate\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$u$}]\begingroup Field disturbance\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$v$}]\begingroup Directional coordinate\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$W$}]\begingroup Size of the input optical field\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$x$}]\begingroup Spatial coordinate\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$x_{min}$}]\begingroup Position of Airy Disk first minimum\nomeqref {2.104}
+		\nompageref{140}
+  \item [{$y$}]\begingroup Spatial coordinate\nomeqref {1.23}
+		\nompageref{78}
+  \item [{$z$}]\begingroup Distance on the optical axis\nomeqref {1.23}
+		\nompageref{78}
+  \item [{p}]\begingroup Micro array pitch\nomeqref {3.14}
+		\nompageref{173}
+  \item [{R}]\begingroup Radius of curvature of a lens surface\nomeqref {2.104}
+		\nompageref{140}
+  \item [{SNR}]\begingroup Signal to noise ratio\nomeqref {2.104}
+		\nompageref{140}
+
+\end{thenomenclature}

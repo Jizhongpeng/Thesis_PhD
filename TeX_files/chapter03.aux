@@ -1,0 +1,128 @@
+\relax 
+\citation{ng2006digital}
+\citation{georgiev2010focused}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Simulations of a Plenoptic 1.0 System}{139}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:chapter4}{{3}{139}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{139}}
+\newlabel{sec:intro3}{{3.1}{139}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Description of the System}{139}}
+\newlabel{sec:system10}{{3.2}{139}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces  Parameters that characterize the micro lens array are: the pitch $p$, defined as the distance between the centres of two lenslets, the diameter d, the number of lenslets per row N and the size of the micro array W. }}{140}}
+\newlabel{fig:pleno10_system}{{3.1}{140}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces  Parameters that characterize the micro lens array. }}{141}}
+\newlabel{fig:microarray1}{{3.2}{141}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Diffraction Effects on the System}{141}}
+\newlabel{sec:diffraction}{{3.2.1}{141}}
+\newlabel{eq:airy1}{{3.1}{141}}
+\newlabel{eq:lenscond}{{3.2}{141}}
+\newlabel{eq:min_diam}{{3.3}{142}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces  Values of acceptable lenslet diameter to avoid diffraction induced cross talk. }}{142}}
+\newlabel{fig:mindiam}{{3.3}{142}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces  Raw plenoptic image of a point source. The grid represents the edges of the sub images. If the point source is in focus, it should be represented by only one lenslet. Because of diffraction some light goes also on the neighbouring sub images. }}{143}}
+\newlabel{fig:crosstalk1}{{3.4}{143}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Phase space of the light field of a point object: on the left is the case when the condition 3.3\hbox {} is respected; on the right when diffraction induces cross talk that arises between neighbouring lenslets. Cross talk introduces a blur in the rendered image whose width is $\Delta x$. }}{143}}
+\newlabel{fig:crosstalk2}{{3.5}{143}}
+\citation{ng2006digital}
+\citation{georgiev2010focused}
+\citation{pedrotti1993introduction}
+\citation{ng2006digital}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Advanced Rendering Techniques}{144}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Changing Aperture}{144}}
+\newlabel{eq:rendering4}{{3.4}{145}}
+\citation{levoy2006microscope}
+\citation{levoy2006microscope}
+\citation{levoy2006microscope}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces  Rendering seen from the $(x,\theta _x)$ slice of the phase space. The directional pixels not considered for the integration are shown in grey. }}{146}}
+\newlabel{fig:rendering4}{{3.6}{146}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces  Raw plenoptic 1.0 image obatined from Levoy \textit  {et al.} The microscope was a Zeiss Axiovert with a 20x/0.5NA (dry) objective. The micro lens array was 24mm x 36mm, with square 125-micron x 125-micron f/20 micro lenses, held in front of the Axiovert's side camera port using an optical bench mount. The camera was a Canon 5D full-frame digital SLR. The specimen was the thin silky skin separating two layers of an onion, immersed in oil to improve transparency \cite  {levoy2006microscope}. }}{147}}
+\newlabel{fig:rawstanford1}{{3.7}{147}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Rendered Images from the raw data in figure 3.7\hbox {}. On the left there is the full aperture image obtained integrating along all the directional coordinates, while on the right there is the all in focus image obtained taking only the central pixel of the each sub image, that corresponds to rays with the direction parallel to the optical axis.}}{147}}
+\newlabel{fig:stanford1}{{3.8}{147}}
+\citation{georgiev2010focused}
+\citation{ng2006digital}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Changing the Point of View}{148}}
+\newlabel{eq:rendering5}{{3.5}{148}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Depth Estimation}{148}}
+\newlabel{sec:depth10}{{3.4}{148}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces  Sampling of the light field of a point source in focus, on the top, closer to the main lens, centre, and further away, bottom. When the source is out of focus, both position and directions are sampled by more than one lenslet since the main lens image is no longer formed any more on the lenslet plane. }}{150}}
+\newlabel{fig:depth}{{3.9}{150}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces  Information on the depth of a point source imaged by a plenoptic 1.0 system. As explained in section 1.4.1\hbox {}. If the point source is in focus, on the top, it's position is sampled by one lenslet as well as the whole set of directions.}}{151}}
+\newlabel{fig:depth1}{{3.10}{151}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces  Physical meaning of the slope in the phase space. If the point source is further then the camera focal plane, the phase space line has a negative slope. If the point source is closer then the focal plane, the slope of the phase space line is positive.}}{152}}
+\newlabel{fig:depth3}{{3.11}{152}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces  Numerical simulation of a point source imaged by a plenoptic 1.0 imaging system. The point source was placed at three different distances from the main lens. The top three figurers show the focused image. In the centre ones a defocus of 0.125 m closer to the main lens is added. In the bottom ones the point source is closer to the main lens of 0.25 m. In all the three cases the raw data image is on the left, the rendered image is on the centre and the phase space line is on the right.}}{153}}
+\newlabel{fig:depth4}{{3.12}{153}}
+\citation{ng2006digital}
+\citation{ng2005light}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Synthetic Refocus}{154}}
+\newlabel{sec:refocus10}{{3.5}{154}}
+\citation{ng2005light}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces  The synthetic camera refocusing method is based on the fact that is always possible to define a virtual aperture that is focused on the lenslet plane. }}{155}}
+\newlabel{fig:synthetic0}{{3.13}{155}}
+\newlabel{eq:sinth1}{{3.6}{155}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Synthetic Refocus Algorithm}{156}}
+\newlabel{eq:alpha}{{3.7}{156}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces  Changing the focal plane of the camera is equal to reparametrize the light field according to the new coordinates. The reparametrization is basically a shift proportional to the ratio between the refocused plane and the original camera plane $ \alpha '$. }}{157}}
+\newlabel{fig:synthetic3}{{3.14}{157}}
+\newlabel{eq:refocus11}{{3.8}{158}}
+\newlabel{eq:shear1}{{3.9}{158}}
+\newlabel{eq:synthLF2}{{3.10}{158}}
+\citation{georgiev2010focused}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Refocusing Operator}{159}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces  Changing the position of the focal plane is equal to shear the light field in the phase space. The total area remains the same since the total light field is conserved. }}{160}}
+\newlabel{fig:shear1}{{3.15}{160}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces  Flow chart of the operator shearing. }}{161}}
+\newlabel{fig:flowcharet1}{{3.16}{161}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Results of the Simulations}{161}}
+\newlabel{tab:1}{{3.6}{161}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces  Set up of a plenoptic 1.0 camera replicated in the simulations. }}{162}}
+\newlabel{fig:pleno10_system2}{{3.17}{162}}
+\newlabel{eq:angularres}{{3.11}{162}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces  Position of the point sources imaged inside the volume V simulated. }}{163}}
+\newlabel{fig:volumepoint}{{3.18}{163}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces  Raw image on the left and rendered image on the right. Intensity is shown in false colour in order to appreciate variations in energy distribution. }}{164}}
+\newlabel{fig:rawandimage}{{3.19}{164}}
+\newlabel{eq:alpha1}{{3.12}{164}}
+\newlabel{eq:alpha2}{{3.13}{164}}
+\newlabel{eq:alpha3}{{3.14}{164}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces  Values of the refocusing factor $ \alpha '$ as a function of the defocus. A positive defocus means that the object it further away with respect to the main lens, a negative defocus indicates an object that is closer. }}{165}}
+\newlabel{fig:alpha}{{3.20}{165}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces  Refocused images of the three point sources in figure 3.19\hbox {}. In the top one the point A is refocused, in the bottom one the point B is refocused. When the point source is refocused, the intensity distribution is higher with respect to the out of focus points. }}{166}}
+\newlabel{fig:refocus}{{3.21}{166}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Focal Stack Depth Estimation}{167}}
+\citation{wetzstein2011computational}
+\citation{georgiev2012multifocus}
+\citation{ueda2008multi}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.22}{\ignorespaces  Spectrum of out of focus image (blue) and spectrum of the refocused image (red). }}{168}}
+\newlabel{fig:spec1}{{3.22}{168}}
+\newlabel{tab:2}{{3.7}{169}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.23}{\ignorespaces  Energy contained in the spectrum of the rendered image plotted as a function of the refocusing factor $ \alpha '$. In red is indicated the value of $ \alpha '$ corresponding to the image with the maximum energy. }}{170}}
+\newlabel{fig:maxima}{{3.23}{170}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.24}{\ignorespaces  Estimated values of $ \alpha '$ represented by blue stars and the theoretical values represented with the red line. }}{171}}
+\newlabel{fig:error}{{3.24}{171}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.25}{\ignorespaces  Distance between the estimated values of $ \alpha '$ and the actual theoretical values. }}{171}}
+\newlabel{fig:error1}{{3.25}{171}}
+\@setckpt{./TeX_files/chapter03}{
+\setcounter{page}{172}
+\setcounter{equation}{14}
+\setcounter{enumi}{5}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{25}
+\setcounter{table}{0}
+\setcounter{float@type}{4}
+\setcounter{parentequation}{0}
+\setcounter{r@tfl@t}{0}
+}

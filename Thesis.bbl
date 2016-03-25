@@ -1,0 +1,424 @@
+\begin{thebibliography}{10}
+
+\bibitem{adelson1991plenoptic}
+Edward~H Adelson and James~R Bergen.
+\newblock {\em The plenoptic function and the elements of early vision}.
+\newblock Vision and Modeling Group, Media Laboratory, Massachusetts Institute
+  of Technology, 1991.
+
+\bibitem{adelson1992single}
+Edward~H Adelson and John Y.~A. Wang.
+\newblock Single lens stereo with a plenoptic camera.
+\newblock {\em IEEE Transactions on Pattern Analysis \& Machine Intelligence},
+  (2):99--106, 1992.
+
+\bibitem{birch2012depth}
+Gabriel~C Birch, J~Scott Tyo, and Jim Schwiegerling.
+\newblock Depth measurements through controlled aberrations of projected
+  patterns.
+\newblock {\em Optics express}, 20(6):6561--6574, 2012.
+
+\bibitem{bishop2011full}
+Tom~E Bishop and Paolo Favaro.
+\newblock Full-resolution depth map estimation from an aliased plenoptic light
+  field.
+\newblock In {\em Computer Vision--ACCV 2010}, pages 186--200. Springer, 2011.
+
+\bibitem{bishop2012light}
+Tom~E Bishop and Paolo Favaro.
+\newblock The light field camera: Extended depth of field, aliasing, and
+  superresolution.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 34(5):972--986, 2012.
+
+\bibitem{bishop2009light}
+Tom~E Bishop, Sara Zanetti, and Paolo Favaro.
+\newblock Light field superresolution.
+\newblock In {\em Computational Photography (ICCP), 2009 IEEE International
+  Conference on}, pages 1--9. IEEE, 2009.
+
+\bibitem{boominathan2014improving}
+Vivek Boominathan, Kaushik Mitra, and Ashok Veeraraghavan.
+\newblock Improving resolution and depth-of-field of light field cameras using
+  a hybrid imaging system.
+\newblock In {\em Computational Photography (ICCP), 2014 IEEE International
+  Conference on}, pages 1--10. IEEE, 2014.
+
+\bibitem{born1999principles}
+Max Born and Emil Wolf.
+\newblock {\em Principles of optics: electromagnetic theory of propagation,
+  interference and diffraction of light}.
+\newblock Cambridge university press, 1999.
+
+\bibitem{bracewell1965fourier}
+Ron Bracewell.
+\newblock The fourier transform and iis applications.
+\newblock {\em New York}, 1965.
+
+\bibitem{farrell2012digital}
+Joyce~E Farrell, Peter~B Catrysse, and Brian~A Wandell.
+\newblock Digital camera simulation.
+\newblock {\em Applied Optics}, 51(4):A80--A90, 2012.
+
+\bibitem{favaro2012split}
+Paolo Favaro.
+\newblock A split-sensor light field camera for extended depth of field and
+  superresolution.
+\newblock In {\em SPIE Photonics Europe}, pages 843602--843602. International
+  Society for Optics and Photonics, 2012.
+
+\bibitem{gabriel1908photographie}
+Lippmann Gabriel.
+\newblock La photographie int{\'e}grale.
+\newblock {\em Comptes-Rendus, Acad{\'e}mie des Sciences}, 146:446--551, 1908.
+
+\bibitem{georgiev2015plenoptic}
+Todor Georgiev.
+\newblock Plenoptic camera resolution.
+\newblock In {\em Computational Optical Sensing and Imaging}, pages JTh4A--2.
+  Optical Society of America, 2015.
+
+\bibitem{georgiev2011superresolution}
+Todor Georgiev, Georgi Chunev, and Andrew Lumsdaine.
+\newblock Superresolution with the focused plenoptic camera.
+\newblock In {\em IS\&T/SPIE Electronic Imaging}, pages 78730X--78730X.
+  International Society for Optics and Photonics, 2011.
+
+\bibitem{georgiev2006light}
+Todor Georgiev and Chintan Intwala.
+\newblock Light field camera design for integral view photography.
+\newblock {\em Adobe System, Inc}, 2006.
+
+\bibitem{georgiev2009superresolution}
+Todor Georgiev and Andrew Lumsdaine.
+\newblock Superresolution with plenoptic camera 2.0.
+\newblock {\em Adobe Systems Incorporated, Tech. Rep}, 2009.
+
+\bibitem{georgiev2010focused}
+Todor Georgiev and Andrew Lumsdaine.
+\newblock Focused plenoptic camera and rendering.
+\newblock {\em Journal of Electronic Imaging}, 19(2):021106--021106, 2010.
+
+\bibitem{georgiev2012multifocus}
+Todor Georgiev and Andrew Lumsdaine.
+\newblock The multifocus plenoptic camera.
+\newblock In {\em IS\&T/SPIE Electronic Imaging}, pages 829908--829908.
+  International Society for Optics and Photonics, 2012.
+
+\bibitem{georgiev2011plenoptic}
+Todor Georgiev, Andrew Lumsdaine, and Sergio Goma.
+\newblock Plenoptic principal planes.
+\newblock In {\em Imaging Systems and Applications}, page JTuD3. Optical
+  Society of America, 2011.
+
+\bibitem{georgiev2006spatio}
+Todor Georgiev, Ke~Colin Zheng, Brian Curless, David Salesin, Shree Nayar, and
+  Chintan Intwala.
+\newblock Spatio-angular resolution tradeoffs in integral photography.
+\newblock {\em Rendering Techniques}, 2006:263--272, 2006.
+
+\bibitem{georgiev2009resolution}
+Todor~G Georgiev and Andrew Lumsdaine.
+\newblock Resolution in plenoptic cameras.
+\newblock In {\em Computational Optical Sensing and Imaging}, page CTuB3.
+  Optical Society of America, 2009.
+
+\bibitem{georgiev2012super}
+Todor~G Georgiev and Andrew Lumsdaine.
+\newblock Super-resolution with the focused plenoptic camera, November~20 2012.
+\newblock US Patent 8,315,476.
+
+\bibitem{georgiev2009high}
+Todor~G Georgiev, Andrew Lumsdaine, and Sergio Goma.
+\newblock High dynamic range image capture with plenoptic 2.0 camera.
+\newblock In {\em Signal recovery and synthesis}, page SWA7P. Optical Society
+  of America, 2009.
+
+\bibitem{gonzalez2004digital}
+Rafael~C Gonzalez, Richard~Eugene Woods, and Steven~L Eddins.
+\newblock {\em Digital image processing using MATLAB}.
+\newblock Pearson Education India, 2004.
+
+\bibitem{goodman2005introduction}
+Joseph~W Goodman.
+\newblock {\em Introduction to Fourier optics}.
+\newblock Roberts and Company Publishers, 2005.
+
+\bibitem{goodman2015statistical}
+Joseph~W Goodman and Randy~L Haupt.
+\newblock {\em Statistical optics}.
+\newblock John Wiley \& Sons, 2015.
+
+\bibitem{gortler1996lumigraph}
+Steven~J Gortler, Radek Grzeszczuk, Richard Szeliski, and Michael~F Cohen.
+\newblock The lumigraph.
+\newblock In {\em Proceedings of the 23rd annual conference on Computer
+  graphics and interactive techniques}, pages 43--54. ACM, 1996.
+
+\bibitem{guillemin1990symplectic}
+Victor Guillemin and Shlomo Sternberg.
+\newblock {\em Symplectic techniques in physics}.
+\newblock Cambridge University Press, 1990.
+
+\bibitem{hansen2011depth}
+Michael Hansen and Eric Holk.
+\newblock Depth map estimation for plenoptic images.
+\newblock 2011.
+
+\bibitem{hart1992adler}
+William~M Hart and Francis~Heed Adler.
+\newblock {\em Adler's physiology of the eye: clinical application}.
+\newblock Mosby Inc, 1992.
+
+\bibitem{herzig1997micro}
+Hans~Peter Herzig.
+\newblock {\em Micro-optics: elements, systems and applications}.
+\newblock CRC Press, 1997.
+
+\bibitem{ives1903parallax}
+Frederic~E Ives.
+\newblock Parallax stereogram and process of making same., April~14 1903.
+\newblock US Patent 725,567.
+
+\bibitem{ives1930parallax}
+Herbert~E Ives.
+\newblock Parallax panoramagrams made with a large diameter lens.
+\newblock {\em J. Opt. Soc. Amer}, 20:332--342, 1930.
+
+\bibitem{ji2015depth}
+Yu~Ji, Jinwei Ye, and Jingyi Yu.
+\newblock Depth reconstruction from the defocus effect of an xslit camera.
+\newblock In {\em Computational Optical Sensing and Imaging}, pages CM4E--3.
+  Optical Society of America, 2015.
+
+\bibitem{johannsen2013calibration}
+Ole Johannsen, Christian Heinze, Bastian Goldluecke, and Christian Perwa{\ss}.
+\newblock On the calibration of focused plenoptic cameras.
+\newblock In {\em Time-of-Flight and Depth Imaging. Sensors, Algorithms, and
+  Applications}, pages 302--317. Springer, 2013.
+
+\bibitem{kohler1893new}
+August K{\"o}hler.
+\newblock A new system of illumination for photomicrographic purposes.
+\newblock {\em Z. Wiss. Mikroskopie}, 10:433--440, 1893.
+
+\bibitem{kohler1934device}
+August Kohler and Walter Bauersfeld.
+\newblock Device for light-field and darkfield illumination of microscopic
+  objects, January~16 1934.
+\newblock US Patent 1,943,510.
+
+\bibitem{lanman2008shield}
+Douglas Lanman, Ramesh Raskar, Amit Agrawal, and Gabriel Taubin.
+\newblock Shield fields: modeling and capturing 3d occluders.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 27(5):131, 2008.
+
+\bibitem{levoy1996light}
+Marc Levoy and Pat Hanrahan.
+\newblock Light field rendering.
+\newblock In {\em Proceedings of the 23rd annual conference on Computer
+  graphics and interactive techniques}, pages 31--42. ACM, 1996.
+
+\bibitem{lu2013high}
+Chien-Hung Lu, Stefan Muenzel, and Jason Fleischer.
+\newblock High-resolution light-field microscopy.
+\newblock In {\em Computational Optical Sensing and Imaging}, pages CTh3B--2.
+  Optical Society of America, 2013.
+
+\bibitem{lumsdaine2008full}
+Andrew Lumsdaine and Todor Georgiev.
+\newblock Full resolution lightfield rendering.
+\newblock {\em Indiana University and Adobe Systems, Tech. Rep}, 2008.
+
+\bibitem{lumsdaine2009focused}
+Andrew Lumsdaine and Todor Georgiev.
+\newblock The focused plenoptic camera.
+\newblock In {\em Computational Photography (ICCP), 2009 IEEE International
+  Conference on}, pages 1--8. IEEE, 2009.
+
+\bibitem{lynch2011development}
+Kyle Lynch.
+\newblock {\em Development of a 3-D fluid velocimetry technique based on light
+  field imaging}.
+\newblock PhD thesis, Auburn University, 2011.
+
+\bibitem{lynch2012three}
+Kyle Lynch, Tim Fahringer, and Brian Thurow.
+\newblock Three-dimensional particle image velocimetry using a plenoptic
+  camera.
+\newblock In {\em AIAA Aerospace Sciences Meeting}, 2012.
+
+\bibitem{mandel1995optical}
+Leonard Mandel and Emil Wolf.
+\newblock {\em Optical coherence and quantum optics}.
+\newblock Cambridge university press, 1995.
+
+\bibitem{levoy2006microscope}
+Levoy Mark.
+\newblock Stanford light field microscope project, 2005.
+
+\bibitem{marwah2013compressive}
+Kshitij Marwah, Gordon Wetzstein, Yosuke Bando, and Ramesh Raskar.
+\newblock Compressive light field photography using overcomplete dictionaries
+  and optimized projections.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):46, 2013.
+
+\bibitem{matsushima2009band}
+Kyoji Matsushima and Tomoyoshi Shimobaba.
+\newblock Band-limited angular spectrum method for numerical simulation of
+  free-space propagation in far and near fields.
+\newblock {\em Optics express}, 17(22):19662--19673, 2009.
+
+\bibitem{nayar2006computational}
+Shree~K Nayar.
+\newblock Computational cameras: Redefining the image.
+\newblock {\em Computer}, (8):30--38, 2006.
+
+\bibitem{ng2006digital}
+Ren Ng.
+\newblock {\em Digital light field photography}.
+\newblock PhD thesis, stanford university, 2006.
+
+\bibitem{ng2005light}
+Ren Ng, Marc Levoy, Mathieu Br{\'e}dif, Gene Duval, Mark Horowitz, and Pat
+  Hanrahan.
+\newblock Light field photography with a hand-held plenoptic camera.
+\newblock {\em Computer Science Technical Report CSTR}, 2(11), 2005.
+
+\bibitem{nomura2007scene}
+Yoshikuni Nomura, Li~Zhang, and Shree~K Nayar.
+\newblock Scene collages and flexible camera arrays.
+\newblock In {\em Proceedings of the 18th Eurographics conference on Rendering
+  Techniques}, pages 127--138. Eurographics Association, 2007.
+
+\bibitem{pedrotti1993introduction}
+Frank~L Pedrotti and Leno~S Pedrotti.
+\newblock Introduction to optics 2nd edition.
+\newblock {\em Introduction to Optics 2nd Edition by Frank L. Pedrotti, SJ,
+  Leno S. Pedrotti New Jersey: Prentice Hall, 1993}, 1, 1993.
+
+\bibitem{perwass2012single}
+Christian Perwass and Lennart Wietzke.
+\newblock Single lens 3d-camera with extended depth-of-field.
+\newblock In {\em Proc. SPIE}, volume 8291, page 829108, 2012.
+
+\bibitem{pifferi2005performance}
+Antonio Pifferi, Alessandro Torricelli, Andrea Bassi, Paola Taroni, Rinaldo
+  Cubeddu, Heidrun Wabnitz, Dirk Grosenick, Michael M{\"o}ller, Rainer
+  Macdonald, Johannes Swartling, et~al.
+\newblock Performance assessment of photon migration instruments: the medphot
+  protocol.
+\newblock {\em Applied optics}, 44(11):2104--2114, 2005.
+
+\bibitem{plato1945republic}
+Plato and Francis~Macdonald Cornford.
+\newblock {\em The republic of Plato}, volume~30.
+\newblock Oxford University Press New York, 1945.
+
+\bibitem{re2013multi}
+Rebecca Re, Davide Contini, Massimo Turola, Lorenzo Spinelli, Lucia Zucchelli,
+  Matteo Caffini, Rinaldo Cubeddu, and Alessandro Torricelli.
+\newblock Multi-channel medical device for time domain functional near infrared
+  spectroscopy based on wavelength space multiplexing.
+\newblock {\em Biomedical optics express}, 4(10):2231--2246, 2013.
+
+\bibitem{shroff2012high}
+Sapna Shroff and Kathrin Berkner.
+\newblock High resolution image reconstruction for plenoptic imaging systems
+  using system response.
+\newblock In {\em Computational Optical Sensing and Imaging}, pages CM2B--2.
+  Optical Society of America, 2012.
+
+\bibitem{shroff2013image}
+Sapna~A Shroff and Kathrin Berkner.
+\newblock Image formation analysis and high resolution image reconstruction for
+  plenoptic imaging systems.
+\newblock {\em Applied optics}, 52(10):D22--D31, 2013.
+
+\bibitem{sommerfeld1954optics}
+Arnold Sommerfeld.
+\newblock Optics lectures on theortical physics, vol. iv.
+\newblock {\em Optics Lectures on Theortical Physics, Vol. IV by Arnold
+  Sommerfeld New York, NY: Academic Press INC, 1954}, 1, 1954.
+
+\bibitem{sypek1995light}
+Maciej Sypek.
+\newblock Light propagation in the fresnel region. new numerical approach.
+\newblock {\em Optics communications}, 116(1):43--48, 1995.
+
+\bibitem{sypek2009reply}
+Maciej Sypek.
+\newblock Reply to the comment on “light propagation in the fresnel
+  region--new numerical approach”.
+\newblock {\em Optics Communications}, 282(6):1074--1077, 2009.
+
+\bibitem{taguchi2010axial}
+Yuichi Taguchi, Amit Agrawal, Srikumar Ramalingam, and Ashok Veeraraghavan.
+\newblock Axial light field for curved mirrors: Reflect your perspective, widen
+  your view.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2010 IEEE
+  Conference on}, pages 499--506. IEEE, 2010.
+
+\bibitem{thurow2013recent}
+Brian~S Thurow and Timothy Fahringer.
+\newblock Recent development of volumetric piv with a plenoptic camera.
+\newblock In {\em PIV13; 10th International Symposium on Particle Image
+  Velocimetry, Delft, The Netherlands, July 1-3, 2013}. Delft University of
+  Technology, Faculty of Mechanical, Maritime and Materials Engineering, and
+  Faculty of Aerospace Engineering, 2013.
+
+\bibitem{turola2014wave}
+Massimo Turola and Steve Gruppetta.
+\newblock Wave optics simulations of a focused plenoptic system.
+\newblock In {\em Frontiers in Optics}, pages JTu3A--24. Optical Society of
+  America, 2014.
+
+\bibitem{ueda2008adaptive}
+Kensuke Ueda, Takafumi Koike, Keita Takahashi, and Takeshi Naemura.
+\newblock Adaptive integral photography imaging with variable-focus lens array.
+\newblock In {\em Electronic Imaging 2008}, pages 68031A--68031A. International
+  Society for Optics and Photonics, 2008.
+
+\bibitem{ueda2008multi}
+Kensuke Ueda, Dongha Lee, Takafumi Koike, Keita Takahashi, and Takeshi Naemura.
+\newblock Multi-focal compound eye: liquid lens array for computational
+  photography.
+\newblock In {\em ACM SIGGRAPH 2008 new tech demos}, page~28. ACM, 2008.
+
+\bibitem{veeraraghavan2007dappled}
+Ashok Veeraraghavan, Ramesh Raskar, Amit Agrawal, Ankit Mohan, and Jack
+  Tumblin.
+\newblock Dappled photography: Mask enhanced cameras for heterodyned light
+  fields and coded aperture refocusing.
+\newblock {\em ACM Trans. Graph.}, 26(3):69, 2007.
+
+\bibitem{wetzstein2011computational}
+Gordon Wetzstein, Ivo Ihrke, Douglas Lanman, and Wolfgang Heidrich.
+\newblock Computational plenoptic imaging.
+\newblock In {\em Computer Graphics Forum}, volume~30, pages 2397--2426. Wiley
+  Online Library, 2011.
+
+\bibitem{wilburn2001light}
+Bennett~S Wilburn, Michal Smulski, Hsiao-Heng~K Lee, and Mark~A Horowitz.
+\newblock Light field video camera.
+\newblock In {\em Electronic Imaging 2002}, pages 29--36. International Society
+  for Optics and Photonics, 2001.
+
+\bibitem{wolf2007introduction}
+Emil Wolf.
+\newblock {\em Introduction to the Theory of Coherence and Polarization of
+  Light}.
+\newblock Cambridge University Press, 2007.
+
+\bibitem{yang2002real}
+Jason~C Yang, Matthew Everett, Chris Buehler, and Leonard McMillan.
+\newblock A real-time distributed light field camera.
+\newblock {\em Rendering Techniques}, 2002:77--86, 2002.
+
+\bibitem{zhou2011computational}
+Changyin Zhou and Shree~K Nayar.
+\newblock Computational cameras: Convergence of optics and processing.
+\newblock {\em Image Processing, IEEE Transactions on}, 20(12):3322--3340,
+  2011.
+
+\end{thebibliography}

@@ -1,0 +1,68 @@
+\nomenclatureentry{a$\lambda$@[{$\lambda$}]\begingroup Wavelength of the light\nomeqref {1.0}|nompageref}{43}
+\nomenclatureentry{a$\theta$@[{$\theta$}]\begingroup Angular coordinate\nomeqref {1.0}|nompageref}{44}
+\nomenclatureentry{a$L$@[{$L$}]\begingroup Light Field\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$x$@[{$x$}]\begingroup Spatial coordinate\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$y$@[{$y$}]\begingroup Spatial coordinate\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$z$@[{$z$}]\begingroup Distance on the optical axis\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$v$@[{$v$}]\begingroup Directional coordinate\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$u$@[{$u$}]\begingroup Directional coordinate\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$a$@[{$a$}]\begingroup Distance from the main lens image to the micro array\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$b$@[{$b$}]\begingroup Distance from the micro array to the sensor\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$f$@[{$f$}]\begingroup Focal length of the main lens\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$f_{\mu}$@[{$f_{\mu}$}]\begingroup Focal length of the micro lens\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$d$@[{$d$}]\begingroup Aperture diameter\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$\overrightarrow{X}$@[{$\overrightarrow{X}$}]\begingroup Vector representing the ray of light\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$A$@[{$A$}]\begingroup Transformation matrix\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$A^{-1}$@[{$A^{-1}$}]\begingroup Transformation matrix\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$m$@[{$m$}]\begingroup Magnification\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$D$@[{$D$}]\begingroup Aperture diameter of the main lens\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$I$@[{$I$}]\begingroup Intensity of the optical field\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$E$@[{$E$}]\begingroup Radiance\nomeqref {1.23}|nompageref}{76}
+\nomenclatureentry{a$\overrightarrow{E}$@[{$\overrightarrow{E}$}]\begingroup Electric field\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\overrightarrow{H}$@[{$\overrightarrow{H}$}]\begingroup Magnetic field\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\epsilon$@[{$\epsilon$}]\begingroup Electrical permittivity\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\mu$@[{$\mu$}]\begingroup Magnetic permittivity\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\nabla$@[{$\nabla$}]\begingroup Laplacian operator\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\widehat{i},\widehat{j}$, $\widehat{k}$@[{$\widehat{i},\widehat{j}$, $\widehat{k}$}]\begingroup unit vectors\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$n$@[{$n$}]\begingroup Refractive index\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$c$@[{$c$}]\begingroup Speed of light in vacuum\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$t$@[{$t$}]\begingroup Time\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$u$@[{$u$}]\begingroup Field disturbance\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\nu$@[{$\nu$}]\begingroup Optical frequency\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\phi$@[{$\phi$}]\begingroup Phase\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$k$@[{$k$}]\begingroup Wave number\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$U$@[{$U$}]\begingroup Complex field\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\eta, \chi$@[{$\eta, \chi$}]\begingroup Object space coordinates\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\sigma$@[{$\sigma$}]\begingroup Area of the aperture\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$f_x, f_y$@[{$f_x, f_y$}]\begingroup Spatial frequencies\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\nu_x, \nu_y$@[{$\nu_x, \nu_y$}]\begingroup Local spatial frequencies\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{aSNR@[{SNR}]\begingroup Signal to noise ratio\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\Delta$@[{$\Delta$}]\begingroup Thickness function\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$t_{lens}$@[{$t_{lens}$}]\begingroup Transmission of the lens\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{aR@[{R}]\begingroup Radius of curvature of a lens surface\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$N$@[{$N$}]\begingroup Number of samples\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$r$@[{$r$}]\begingroup Radius of a lens aperture\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$F_\#$@[{$F_\#$}]\begingroup F-number\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\nu_c$@[{$\nu_c$}]\begingroup Optical cut-off frequency\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$x_{min}$@[{$x_{min}$}]\begingroup Position of Airy Disk first minimum\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\Gamma$@[{$\Gamma$}]\begingroup Autocorrelation function\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\tau$@[{$\tau$}]\begingroup Coherence time\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$A$@[{$A$}]\begingroup Area\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\Delta S$@[{$\Delta S$}]\begingroup Area of the emitting source\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$d\Sigma$@[{$d\Sigma$}]\begingroup Elemental area\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$C$@[{$C$}]\begingroup Coherence index\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$d_c$@[{$d_c$}]\begingroup Distance of propagation in the coherence algorithm\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$W$@[{$W$}]\begingroup Size of the input optical field\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$\iota$@[{$\iota$}]\begingroup Incoherence degree\nomeqref {2.104}|nompageref}{138}
+\nomenclatureentry{a$d_{Airy}$@[{$d_{Airy}$}]\begingroup Airy disk diameter\nomeqref {3.14}|nompageref}{171}
+\nomenclatureentry{a$A'$@[{$A'$}]\begingroup Synthetic aperture\nomeqref {3.14}|nompageref}{171}
+\nomenclatureentry{a$ \alpha'$@[{$ \alpha'$}]\begingroup Refocusing factor\nomeqref {3.14}|nompageref}{171}
+\nomenclatureentry{a$F$@[{$F$}]\begingroup Main lens - micro array distance\nomeqref {3.14}|nompageref}{171}
+\nomenclatureentry{a$F'$@[{$F'$}]\begingroup Main lens - synthetic focal plane distance\nomeqref {3.14}|nompageref}{171}
+\nomenclatureentry{ap@[{p}]\begingroup Micro array pitch\nomeqref {3.14}|nompageref}{171}
+\nomenclatureentry{a$\delta\theta$@[{$\delta\theta$}]\begingroup Angular resolution\nomeqref {3.14}|nompageref}{171}
+\nomenclatureentry{a$N_{sub}$@[{$N_{sub}$}]\begingroup Sub-image resolution\nomeqref {3.14}|nompageref}{171}
+\nomenclatureentry{a$\delta x$@[{$\delta x$}]\begingroup Rayleigh distance\nomeqref {4.19}|nompageref}{211}
+\nomenclatureentry{a$h$@[{$h$}]\begingroup Impulse response\nomeqref {4.19}|nompageref}{211}
+\nomenclatureentry{a$H$@[{$H$}]\begingroup Optical transfer function\nomeqref {4.19}|nompageref}{211}
+\nomenclatureentry{a$NA$@[{$NA$}]\begingroup Numerical aperture\nomeqref {5.2}|nompageref}{233}

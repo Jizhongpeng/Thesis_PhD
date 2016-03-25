@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt]{book}
+%\usepackage[sorting=none]{biblatex}
+%\usepackage{natbib}
+%\bibliographystyle{plainnat}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+%\usepackage{mathtools}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{epstopdf}
+\usepackage[section]{placeins}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{nomencl}
+\usepackage{mathrsfs}
+\makenomenclature
+\renewcommand{\nomname}{List of Symbols}
+%\newcommand{\changefont}{%
+%	\fontsize{7}{9}\selectfont
+%}
+%\fancyhf{}
+%\fancyhead[LE,RO]{\changefont \slshape \rightmark} %section
+%\fancyhead[RE,LO]{\changefont \slshape \leftmark} %chapter
+%\fancyfoot[C]{\changefont \thepage} %footer
+\begin{document}
+
+
+\author{Massimo Turola}
+\title{Investigation of plenoptic imaging systems: a wave optics approach}
+\date{January 2016}
+
+
+\clearpage
+%\frontmatter
+\mainmatter
+\pagestyle{fancyplain}
+\rhead{}
+\renewcommand{\headrulewidth}{0pt}
+\input{./TeX_files/pagetitle}
+\baselineskip 24pt
+\include{./TeX_files/abstract}
+\input{./TeX_files/quotation}
+\tableofcontents
+\printnomenclature	
+\listoffigures
+\listoftables
+\baselineskip 24pt 
+%\mainmatter
+%\pagestyle{fancyplain}
+%\rhead{}
+%\renewcommand{\headrulewidth}{0pt}
+%to print the list of symbols type in the command prompt the command 
+%makeindex Thesis.nlo -s nomencl.ist -o Thesis.nls
+\include{./TeX_files/introduction}
+\include{./TeX_files/chapter01}
+\include{./TeX_files/chapter02}
+\include{./TeX_files/chapter03}
+\include{./TeX_files/chapter04}
+\include{./TeX_files/chapter05}
+\include{./TeX_files/chapter07}
+\backmatter
+% bibliography, glossary and index would go here.
+\bibliographystyle{plain} 
+\bibliography{bibliography}
+\end{document}
