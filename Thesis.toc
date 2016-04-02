@@ -10,6 +10,7 @@
 \contentsline {section}{\numberline {1.6}Plenoptic Camera 2.0}{64}
 \contentsline {section}{\numberline {1.7}Plenoptic Camera 2.0: a Geometrical Optics Analysis}{72}
 \contentsline {section}{\numberline {1.8}Plenoptic 2.0 Rendering}{76}
+\contentsline {section}{\numberline {1.9}Conclusions}{77}
 \contentsline {chapter}{\numberline {2}Fresnel Simulation Toolbox}{79}
 \contentsline {section}{\numberline {2.1}Introduction}{79}
 \contentsline {section}{\numberline {2.2}Scalar Theory of Diffraction}{81}

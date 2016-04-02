@@ -1,23 +1,23 @@
 \nomenclatureentry{a$\lambda$@[{$\lambda$}]\begingroup Wavelength of the light\nomeqref {1.0}|nompageref}{43}
 \nomenclatureentry{a$\theta$@[{$\theta$}]\begingroup Angular coordinate\nomeqref {1.0}|nompageref}{44}
-\nomenclatureentry{a$L$@[{$L$}]\begingroup Light Field\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$x$@[{$x$}]\begingroup Spatial coordinate\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$y$@[{$y$}]\begingroup Spatial coordinate\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$z$@[{$z$}]\begingroup Distance on the optical axis\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$v$@[{$v$}]\begingroup Directional coordinate\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$u$@[{$u$}]\begingroup Directional coordinate\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$a$@[{$a$}]\begingroup Distance from the main lens image to the micro array\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$b$@[{$b$}]\begingroup Distance from the micro array to the sensor\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$f$@[{$f$}]\begingroup Focal length of the main lens\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$f_{\mu}$@[{$f_{\mu}$}]\begingroup Focal length of the micro lens\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$d$@[{$d$}]\begingroup Aperture diameter\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$\overrightarrow{X}$@[{$\overrightarrow{X}$}]\begingroup Vector representing the ray of light\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$A$@[{$A$}]\begingroup Transformation matrix\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$A^{-1}$@[{$A^{-1}$}]\begingroup Transformation matrix\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$m$@[{$m$}]\begingroup Magnification\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$D$@[{$D$}]\begingroup Aperture diameter of the main lens\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$I$@[{$I$}]\begingroup Intensity of the optical field\nomeqref {1.23}|nompageref}{77}
-\nomenclatureentry{a$E$@[{$E$}]\begingroup Radiance\nomeqref {1.23}|nompageref}{77}
+\nomenclatureentry{a$L$@[{$L$}]\begingroup Light Field\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$x$@[{$x$}]\begingroup Spatial coordinate\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$y$@[{$y$}]\begingroup Spatial coordinate\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$z$@[{$z$}]\begingroup Distance on the optical axis\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$v$@[{$v$}]\begingroup Directional coordinate\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$u$@[{$u$}]\begingroup Directional coordinate\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$a$@[{$a$}]\begingroup Distance from the main lens image to the micro array\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$b$@[{$b$}]\begingroup Distance from the micro array to the sensor\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$f$@[{$f$}]\begingroup Focal length of the main lens\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$f_{\mu}$@[{$f_{\mu}$}]\begingroup Focal length of the micro lens\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$d$@[{$d$}]\begingroup Aperture diameter\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$\overrightarrow{X}$@[{$\overrightarrow{X}$}]\begingroup Vector representing the ray of light\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$A$@[{$A$}]\begingroup Transformation matrix\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$A^{-1}$@[{$A^{-1}$}]\begingroup Transformation matrix\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$m$@[{$m$}]\begingroup Magnification\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$D$@[{$D$}]\begingroup Aperture diameter of the main lens\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$I$@[{$I$}]\begingroup Intensity of the optical field\nomeqref {1.23}|nompageref}{78}
+\nomenclatureentry{a$E$@[{$E$}]\begingroup Radiance\nomeqref {1.23}|nompageref}{78}
 \nomenclatureentry{a$\overrightarrow{E}$@[{$\overrightarrow{E}$}]\begingroup Electric field\nomeqref {2.104}|nompageref}{140}
 \nomenclatureentry{a$\overrightarrow{H}$@[{$\overrightarrow{H}$}]\begingroup Magnetic field\nomeqref {2.104}|nompageref}{140}
 \nomenclatureentry{a$\epsilon$@[{$\epsilon$}]\begingroup Electrical permittivity\nomeqref {2.104}|nompageref}{140}
