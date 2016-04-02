@@ -197,6 +197,11 @@ Ole Johannsen, Christian Heinze, Bastian Goldluecke, and Christian Perwa{\ss}.
 \newblock In {\em Time-of-Flight and Depth Imaging. Sensors, Algorithms, and
   Applications}, pages 302--317. Springer, 2013.
 
+\bibitem{kerr2007derivation}
+Douglas~A Kerr.
+\newblock Derivation of the „cosine fourth “law for falloff of illuminance
+  across a camera image, 2007.
+
 \bibitem{kohler1893new}
 August K{\"o}hler.
 \newblock A new system of illumination for photomicrographic purposes.
