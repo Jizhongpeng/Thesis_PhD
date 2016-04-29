@@ -8,6 +8,7 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Values of the \textit {a}, \textit {b} and of the lens aperture for different magnification values. }}{192}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Values of the resolution obtained in the final rendered image, $\Delta x'$, compared with the resolution of the non plenoptic image calculated from the Airy disk pattern $\Delta x$. On the far right is it shown the ratio between these two quantities. )}}{200}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Comparison between the cutoff frequencies of the main lens image and of the rendered image for different values of magnification. The cutoff frequency in the rendered image decreases of a quantity proportional to the decreasing of the magnification.}}{207}
+\contentsline {table}{\numberline {4.5}{\ignorespaces \G@refundefinedtrue \text {\normalfont \bfseries ??}\GenericWarning { }{LaTeX Warning: Reference `tab:grating' on page 208 undefined} Frequencies contained in the grating. The grating is not continous as well as the frequency variation.}}{208}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Table containing the parameters of the micro lens array translation stage. \textit {a} and \textit {b} are the distances shown in figure 5.4\hbox {}, while \textit {c} and \textit {d} are the shift to apply to each translator to set the correspondent magnification value. This table also shows the optical parameters corresponding to the different positions of the translator. }}{229}
 \addvspace {10\p@ }
