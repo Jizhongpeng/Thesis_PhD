@@ -54,14 +54,14 @@
 \nomenclatureentry{a$d_c$@[{$d_c$}]\begingroup Distance of propagation in the coherence algorithm\nomeqref {2.104}|nompageref}{147}
 \nomenclatureentry{a$W$@[{$W$}]\begingroup Size of the input optical field\nomeqref {2.104}|nompageref}{147}
 \nomenclatureentry{a$\iota$@[{$\iota$}]\begingroup Incoherence degree\nomeqref {2.104}|nompageref}{147}
-\nomenclatureentry{a$d_{Airy}$@[{$d_{Airy}$}]\begingroup Airy disk diameter\nomeqref {3.14}|nompageref}{187}
-\nomenclatureentry{a$A'$@[{$A'$}]\begingroup Synthetic aperture\nomeqref {3.14}|nompageref}{187}
-\nomenclatureentry{a$ \alpha'$@[{$ \alpha'$}]\begingroup Refocusing factor\nomeqref {3.14}|nompageref}{187}
-\nomenclatureentry{a$F$@[{$F$}]\begingroup Main lens - micro array distance\nomeqref {3.14}|nompageref}{187}
-\nomenclatureentry{a$F'$@[{$F'$}]\begingroup Main lens - synthetic focal plane distance\nomeqref {3.14}|nompageref}{187}
-\nomenclatureentry{ap@[{p}]\begingroup Micro array pitch\nomeqref {3.14}|nompageref}{187}
-\nomenclatureentry{a$\delta\theta$@[{$\delta\theta$}]\begingroup Angular resolution\nomeqref {3.14}|nompageref}{187}
-\nomenclatureentry{a$N_{sub}$@[{$N_{sub}$}]\begingroup Sub-image resolution\nomeqref {3.14}|nompageref}{187}
+\nomenclatureentry{a$d_{Airy}$@[{$d_{Airy}$}]\begingroup Airy disk diameter\nomeqref {3.14}|nompageref}{188}
+\nomenclatureentry{a$A'$@[{$A'$}]\begingroup Synthetic aperture\nomeqref {3.14}|nompageref}{188}
+\nomenclatureentry{a$ \alpha'$@[{$ \alpha'$}]\begingroup Refocusing factor\nomeqref {3.14}|nompageref}{188}
+\nomenclatureentry{a$F$@[{$F$}]\begingroup Main lens - micro array distance\nomeqref {3.14}|nompageref}{188}
+\nomenclatureentry{a$F'$@[{$F'$}]\begingroup Main lens - synthetic focal plane distance\nomeqref {3.14}|nompageref}{188}
+\nomenclatureentry{ap@[{p}]\begingroup Micro array pitch\nomeqref {3.14}|nompageref}{188}
+\nomenclatureentry{a$\delta\theta$@[{$\delta\theta$}]\begingroup Angular resolution\nomeqref {3.14}|nompageref}{188}
+\nomenclatureentry{a$N_{sub}$@[{$N_{sub}$}]\begingroup Sub-image resolution\nomeqref {3.14}|nompageref}{188}
 \nomenclatureentry{a$\delta x$@[{$\delta x$}]\begingroup Rayleigh distance\nomeqref {4.19}|nompageref}{231}
 \nomenclatureentry{a$h$@[{$h$}]\begingroup Impulse response\nomeqref {4.19}|nompageref}{231}
 \nomenclatureentry{a$H$@[{$H$}]\begingroup Optical transfer function\nomeqref {4.19}|nompageref}{231}

@@ -40,8 +40,8 @@
 \contentsline {subsection}{\numberline {2.8.3}Coherent Imaging vs Incoherent Imaging}{146}
 \contentsline {chapter}{\numberline {3}Simulations of a Plenoptic 1.0 System}{149}
 \contentsline {section}{\numberline {3.1}Introduction}{149}
-\contentsline {section}{\numberline {3.2}Description of the System}{149}
-\contentsline {subsection}{\numberline {3.2.1}Diffraction Effects on the System}{151}
+\contentsline {section}{\numberline {3.2}Description of the System}{150}
+\contentsline {subsection}{\numberline {3.2.1}Diffraction Effects on the System}{152}
 \contentsline {section}{\numberline {3.3}Advanced Rendering Techniques}{156}
 \contentsline {subsection}{\numberline {3.3.1}Changing Aperture}{156}
 \contentsline {subsection}{\numberline {3.3.2}Changing the Point of View}{160}
@@ -51,6 +51,7 @@
 \contentsline {subsection}{\numberline {3.5.2}Refocusing Operator}{172}
 \contentsline {section}{\numberline {3.6}Results of the Simulations}{174}
 \contentsline {section}{\numberline {3.7}Focal Stack Depth Estimation}{181}
+\contentsline {section}{\numberline {3.8}Conclusions}{187}
 \contentsline {chapter}{\numberline {4}Simulation of a Plenoptic 2.0 System}{189}
 \contentsline {section}{\numberline {4.1}Rendering in Plenoptic 2.0}{190}
 \contentsline {subsection}{\numberline {4.1.1}Extracting Sub Images}{192}
