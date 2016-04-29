@@ -26,7 +26,7 @@ The main optics consisted of two plano-convex lenses with a focal length of 120 
 \newpage
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/realsystem.eps}
+	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/realsystem.eps}
 	\caption{\label{fig:realsys} Schematic diagram of the light field microscope. The values of the distances are: $z_c$=27 mm, $z_k$=120 mm, $z_1$=$z_2$=120 mm.
  }
 \end{figure}
@@ -35,12 +35,12 @@ The technical solution adopted was to use two micro metric mechanical translatio
 Figure \ref{fig:photo} shows the assembled light field recording stage and the locations of the two micro metric translators are indicated.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/traslator.eps}
+	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/traslator.eps}
 	\caption{\label{fig:traslator} Schematics of the light field recording stage. The first micro metric translator moves both the sensor and micro array stages. The second only moves the micro array stage with respect to the sensor stage. }
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/photosys.eps}
+	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/photosys.eps}
 	\caption{\label{fig:photo} Assembled light field recording stage with. }
 \end{figure}
 The micro array used (MLA150-5c-M, Thorlabs Inc, USA) has a 10 mm $\times$ 10 mm square grid made of 146 $\mu m$ diameter plano-convex lenslets on a substrate of fused silica. The lenslet pitch is 150 $\mu m$. All the geometric parameters of the lenslet array can be seen in figure \ref{fig:micro array} where \textit{r} is the radius of curvature of the lenslet, \textit{s} is the high of the lenslet from the substrate, \textit{p} is the pitch, \textit{t} the thickness of the substrate and \textit{f} is the focal length. It is linked to the radius of curvature by the relation:
@@ -57,7 +57,7 @@ r = \dfrac{s^2+\frac{p^2}{4}}{2s}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/microarray2.eps}
+	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/microarray2.eps}
 	\caption{\label{fig:micro array} Lenslet array parameters.}
 \end{figure}
  The raw image is recorded using a 10 megapixel CMOS technology sensor with 3840 by 2748 pixels extracted from a digital camera (UI-1490LE-C-HQ, IDS Imaging Development System GmbH, Germany). Its pixel size is 1.67 $\mu m$ with a sensor size of 6.413 mm $\times$ 4.589 mm mounted at on the back of the translation stage. \\
@@ -108,7 +108,7 @@ The development of a new imaging system required the definition of a protocol to
 The calibration image is required to verify the correct alignment of the lenslet array and that the f-number matching condition is respected. It is also used as a guide to create the sub-images grid to render the final image. According to the calibration image, the position in x and y of the micro lens array can be adjusted translating it in x and y, rotating it and if necessary tilting it. These degrees of freedom allows to fine tune the position of the lenslets with respect to the sensor. This operation is performed manually checking the correct alignment on the monitor connected to the camera sensor. Figure \ref{fig:calibrationimg3} shows the four main conditions of micro array misalignment.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/alignedarray.eps}
+	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/alignedarray.eps}
 	\caption{\label{fig:calibrationimg3} Common causes of bad alignment between the micro lens array and the sensor. }
 \end{figure}
 The same image is used to match the f-number of the main lens with the one of the lenslet array according to the configuration of \textit{a} and \textit{b} chosen. This is done manually by changing the aperture placed in front of the main lens until sub images touch each others. Figure \ref{fig:calibrationimg1} shows the case where the aperture of the main lens is too small, and the gap between the sub images is too large while figure \ref{fig:calibrationimg2} shows the calibration image obtained once the aperture of the main lens has been adjusted to match the f-number.
@@ -116,22 +116,22 @@ The same image is used to match the f-number of the main lens with the one of th
 After the f-number is matched, it is possible to proceed with the acquisition of the raw image of the sample. In this case a USAF resolution target has been used as an object. Figure \ref{fig:rawreal} shows the raw images obtained with magnifications equal to 0.5 and 0.4, while figure \ref{fig:rawreal2} shows the raw images obtained with a magnification of 0.3 and 0.25.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/homemade/PW05c.png}
+	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/homemade/PW05c.png}
 	\caption{\label{fig:calibrationimg1} Calibration image with f-number not matched. }
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/homemade/PW05a.png}
+	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/homemade/PW05a.png}
 	\caption{\label{fig:calibrationimg2} Calibration image with matched f-number. }
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/raw0504.eps}
+	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/raw0504.eps}
 	\caption{\label{fig:rawreal} Raw plenoptic 2.0 image of the USAF resolution target obtained by the prototype system built in lab. The top image has a magnification of 0.5, the bottom 0.4. }
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/raw03025.eps}
+	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/raw03025.eps}
 	\caption{\label{fig:rawreal2} Raw plenoptic 2.0 image of the USAF resolution target obtained by the prototype system built in lab. The top image has a magnification of 0.3, the bottom 0.25. }
 \end{figure}
 These raw images show how the different features of the target object are decomposed into sub images. The number of times each point of the main lens image is replicated under the lenslet array increases with decreasing of the magnification as explained in chapter \ref{chap:chapter1} and then verified from the simulations in chapter \ref{chap:chapter4}.
@@ -147,21 +147,21 @@ Rendering images from raw data acquired by the prototype of the light field micr
 \end{itemize}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/rawselect.eps}
+	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/rawselect.eps}
 	\caption{\label{fig:renderingreal} From the calibration image a row and a column of sub images are selected by the user with the red lines on the top if the figure. Two intensity cross sections are generated (un the bottom) and the user manually sets a threshold to discriminate one sub image from the other.}
 \end{figure}
 The final rendered images can be seen in figure \ref{fig:renderingreal1}.
 \\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/homemade/renderedsys.eps}
+	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/homemade/renderedsys.eps}
 	\caption{\label{fig:renderingreal1}Rendered images of a 1951 USAF resolution target. The correspondent raw data are in figures \ref{fig:rawreal} and \ref{fig:rawreal2}. Magnifications are from top left to bottom right: \textit{0.25 0.3 0.4} and \textit{0.5}. }
 \end{figure}
 As expected from the simulated data and the theory of diffraction, resolution drops dramatically with the magnification. From a qualitative analysis, the image gets more blurred for low magnification values, in agreement with what seen in previous chapters. This is due to the loss of resolution due to the dependence of the optical cut-off frequency form the magnification of the plenoptic stage. This result is in agreement the simulations results of section. \\
 If the grid is not correctly evaluated the results is a rendered image with a great number of artefacts. In particular the edges of the tiled sub images will not match as figure \ref{fig:renderinwrong1} shows.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/wrong_grid.eps}
+	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/wrong_grid.eps}
 	\caption{\label{fig:renderinwrong1} Top: Rendered image obtained from the same raw data used to render the image on the bottom right in figure \ref{fig:renderingreal1}. In this case the grid used to select the micro images is not correctly set, presenting an offset of 15 pixel for every sub image and errors in detecting the sub image as the bottom figure shows.}
 \end{figure}
 \section{Future Work}

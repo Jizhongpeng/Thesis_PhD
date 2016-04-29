@@ -19,12 +19,12 @@ L(x,y,u,v) = L(x,y,\theta_x,\theta_y)
 \end{equation}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.3\textwidth]{C:/Users/Massimo/Documents/Thesis/lightfield.eps}
+	\includegraphics[width=.3\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/lightfield.eps}
 	\caption{\label{fig:lightfield}Two point representation of the light field. Each ray of light is uniquely defined by the coordinates of two points of interception.}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/lightfield2.eps}
+	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/lightfield2.eps}
 	\caption{\label{fig:lightfield2}Point angle representation of the light field. A ray of light is uniquely defined by the coordinates of a point that belongs to a plane perpendicular at the optical axis z and by the angles $\theta_x$ and $\theta_y$ that it forms with the optical axis along the directions x and y.}
 \end{figure}
 For each pixel of the sensor of a plenoptic camera it is possible to determine these four coordinates. The information provided by the two extra directional coordinates enables a set of computational features such as 3D reconstruction, synthetic refocus, full depth of field and aberration correction \cite{ng2006digital}. Each of these features is possible after having decoded the light field with the computational stage as shown in figure \ref{fig:systems}.
@@ -33,7 +33,7 @@ For each pixel of the sensor of a plenoptic camera it is possible to determine t
 A plenoptic camera is a camera that records the 4D light field as described in equation \ref{eq:lightfield}. The version proposed and built by Adelson and Wang in 1992 \cite{adelson1992single} is composed of a main lens, a sensor and a micro lens array placed in front of the sensor \cite{adelson1992single}. The presence of the micro array enables the codification of the directional information on the sensor, as will be discussed in the next sections. This coded image represents the raw data of the plenoptic camera and it can be seen in figure \ref{fig:plenoptic1}: 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/plenopticamera.eps}
+	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/plenopticamera.eps}
 	\caption{\label{fig:plenoptic1} Plenoptic camera and its fundamental components. The presence of the micro array allows to record the light field .}
 \end{figure}
 The optical performance of the camera depends on the array's design characteristic. The main issue with the micro lens array is its position with respect to the main lens and the sensor. Depending on where it is placed two types of cameras are possible:
@@ -44,7 +44,7 @@ The optical performance of the camera depends on the array's design characterist
  In the next sections both configurations will be extensively analysed and the way in which they capture the light field will be explained with particular attention to the differences in the raw data they produce. Their performances in term of lateral and directional (or angular) resolution will be detailed. The computational algorithms to render images from the raw data will also be extensively explained.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.4\textwidth]{C:/Users/Massimo/Documents/Thesis/plenoptic10.eps}
+	\includegraphics[width=.4\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/plenoptic10.eps}
 	\caption{\label{fig:plenoptic2}Top: Plenoptic camera 1.0. The main lens is focused on the object and forms an image on the micro array. $f$ is the focal length of the main lens and $f_\mu$ the focal length of the micro lens array. Bottom: Plenoptic camera 2.0. The main lens is focused on an object and forms an image on the plane represented by the dashed line. The micro array acts as a relay between the main lens image and the sensor, satisfying the lens equation $1/a+1/b=1/f_\mu$.}
 \end{figure}
 \section{Plenoptic Camera 1.0}
@@ -52,14 +52,14 @@ The optical performance of the camera depends on the array's design characterist
 The first version of the plenoptic camera has been proposed and realised by Adelson and Wang in 1992 \cite{adelson1992single} and then improved by Ng $et al.$ \cite{ng2005light} and by Ng \cite{ng2006digital}in 2005-6.\\ The purpose of Ng was to design a camera that can use ray tracing techniques to compute synthetic photographs after the acquisition of the four dimensional light field. The main difference between Ng's camera and Adelson and Wang's camera is that the latter was a prototype that utilized a system of relay lenses from the main lens image plane and the micro lens array \cite{ng2005light} while in Ng's camera the array of micro lenses is placed directly in front of the sensor. Each micro lens forms an elemental sub image on the sensor and the directional information is contained inside the sub images. The main lens focuses the rays coming from one point on the object plane on a single point in the image plane. If an array of micro lenses is placed at this image plane all the rays will end up on a single micro lens. The micro lens will then split this bundle of rays on the sub image underneath it, separating the rays according to their direction. This is explained in figure \ref{fig:plenoptic3} where the plenoptic camera is modelled as a simple 2 f system. This behaviour can be achieved also using an array of pinholes instead as proposed originally by Yves. The problem using pinholes is that the amount of light reaching the sensor is considerably lower since a pinhole is restricting the energy output. Since the sensor plane is conjugate with the main lens under each micro lens there will be an image of the main lens aperture. For simplicity in figure \ref{fig:plenoptic3} the system is composed of only five micro lenses and each sub image is composed of only three pixels. The rays departing from a single point in the object plane shown in blue, red and green, are transferred by the main lens on a single micro lens. As an effect of the micro lens, each ray ends on a different pixel of the micro image.
 \begin{figure}[H]
 \centering
-\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/raypleno10.eps}
+\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/raypleno10.eps}
 \caption{\label{fig:plenoptic3}Ray diagram of a plenoptic 1.0 system. The main lens is in a 2f configuration and the sensor plane is conjugated with the main lens plane. The micro lens position maps the position (x,y) of the point P, while the sub image maps the directions of the rays coming from that point. The ray with direction $\theta_1$ falls on the pixel 1 (blue), the ray with direction $\theta_2$ falls on the pixel 2 (green) and the ray with direction $\theta_3$ falls on the pixel 3 (red). The sub image $d$ maps the direction of the rays.  }
 \end{figure}
 Since in the simplified case of figure \ref{fig:plenoptic3} there are only three pixels per micro lens, the maximum number of directions that can be sampled is three. A plenoptic camera samples as many directions as the number of pixels under each lenslet, therefore the directional resolution is given by the sub image resolution. Figure \ref{fig:plenoptic3} also shows that the spatial position of the point P is recorded at the micro array plane and the sampling of the position is linked to the number of lenses in the micro array. This leads to a trade-off between directional and spatial resolution since due to the finite dimension of the sensor, when more pixels are used to record the direction the same amount of pixels are lost to record the position. \\
 With reference to figure \ref{fig:plenoptic4} two points are shown at two different positions on the same focal plane. The task now is to find a link between Levoy's and Hanrahan's two point representation of Light Field \cite{levoy1996light,levoy2006microscope} and the output data of the plenoptic 1.0 camera. Each sub image under each lenslet is an image of the main lens aperture, while the main lens image is formed on the micro array plane. To define the direction of a ray two points are needed. One point is its origin, the second is where it crosses the main lens. These two points are sampled by the lenslet array and by the sub images on the sensor, as shown in figure \ref{fig:plenoptic4}. Therefore it is possible to refer to the micro lens position on the array with spatial coordinates (x,y), and to the pixels of the sub images as the directional coordinates (u,v). With an array of 5 $\times$ 5 micro lenses and a sensor of 15 $\times$ 15 pixel, the 4D light field recorded will be a 5 $\times$ 5 $\times$ 3 $\times$ 3 function. Each point of this function is an intensity value identified by four coordinates, 2 spatial and 2 directional. the sampling of the spatial coordinates is 5 $\times$ 5, the sampling of the directional coordinates is 3 $\times$ 3. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/plenoray2.eps}
+	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/plenoray2.eps}
 	\caption{\label{fig:plenoptic4} Sampling of Light Field. Each ray is described by a set of four coordinates, two spatial (x,y) and two directional (u,v). The spatial coordinates are sampled by the position of the lenslet in the micro array, the directional coordinates are sampled by the pixel under the lenslet.}
 \end{figure}
 This sampling used in the example above is of course very low. The amount of light captured by a lens is defined by its f-number that is the ratio between the focal length and the aperture diameter. The f-number is proportional to the number of rays with different directions that enter into the main lens aperture diameter. The relative f-number can also be defined as the ratio of the distance between the lens and its image and the aperture diameter. 
@@ -80,12 +80,12 @@ Where $n$ is the index of refraction, and $\theta$ is half the total range of di
  To be sure that all the directions sampled by the main lens are mapped into the light field, the f-number of the lenslet should match the f-number of the main lens \cite{ng2005light} as shown in figure \ref{fig:plenoptic5}. This condition known as f-number matching is very important in plenoptic imaging. If the f-number of the lenslet is smaller than the one of the main lens then there is an under sampling of the rays intercepted by the main aperture, since some of the pixels remain dark. If the f-number of the lenslet is bigger there is cross-talk between the sub images. In both cases directional information is in part lost (figure \ref{fig:plenoptic7}) .
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/fnumbermatching.eps}
+	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/fnumbermatching.eps}
 	\caption{\label{fig:plenoptic5}F-number matching between the main lens and the micro lens in the array.  }
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/fnumber2.eps}
+	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/fnumber2.eps}
 	\caption{\label{fig:plenoptic7}When the f-number is matched, all the rays captured by the main lens are mapped on the sub image (yellow). If the f-number of the lenslet is smaller (red), the sub image is smaller and there is an under sampling of the set of rays. If the f-number of the lenslet is bigger (green), the sub image is larger and cross talk happens between neighbouring sub images .  }
 \end{figure}
 \newpage
@@ -97,7 +97,7 @@ Considering all the rays departing from the point \textit{P(x)} captured by the 
 \newpage
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/phasespace10.eps}
+	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/phasespace10.eps}
 	\caption{\label{fig:plenoptic6}Sampling of the light field and phase space representations of the rays.  }
 \end{figure}
 \newpage
@@ -106,19 +106,19 @@ Considering all the rays departing from the point \textit{P(x)} captured by the 
 Before discussing the rendering procedures for plenoptic 1.0 light field data, the three different parametrizations of the light field from the raw image will be described. A plenoptic 1.0 raw image looks like an array of sub images, each sub image contains samples of direction. An example of a plenoptic raw image can be seen in figure \ref{fig:rawlena10}. The raw image has been generated by simulating light propagating into a plenoptic camera, using a Matlab toolbox developed as part of this work which is described in detail in chapter \ref{chap:fresnel}. The simulated camera is composed of a 60 mm focal length lens, with an aperture of 7 mm, and a sensor with a resolution of 1500 $\times$ 1500 pixels. The micro array is composed of 75 $\times$ 75 lenslet with a focal length of 5 mm. The object imaged is a flat two dimensional image, therefore no depth information is stored. The reason for using flat objects to test a plenoptic imaging system is due to the fact that at this point of the work the interest is focussed on  understanding how the directions of the ray of light are recorded on the sensor, therefore reducing the degree of freedom of the problem to a flat isotropic isotropically emitting object simplifies the understanding of the problem. In the next chapters more accurate simulations will be presented taking into account the depth.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/lena_full.eps}
+	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/lena_full.eps}
 	\caption{\label{fig:lenafull} Image used as an object in the simulations.}
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis_PhD/rawlena.eps}
+	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/rawlena.eps}
 	\caption{\label{fig:rawlena10}Left: Example of a raw plenoptic 1.0 image. Right: Zoom on the raw image of the region indicated with the red square. Each lenslet is formed by 20 $\times$ 20 pixels. Each pixel represents a direction of the rays hitting the lenslet that produced the sub image.  }
 \end{figure}
 This raw image is the first parameterization of the light field and it is called the camera view. Pixels are arranged according to the positional coordinates, and each sub image contains the directional coordinates as shown in figures \ref{fig:rawlena10} and \ref{fig:arrayview}. \\
 A second parameterization, known as the array view, is obtained by rearranging the pixels according to the directional coordinates \cite{ng2006digital}. The result is an array of N $\times$ N sub images, where N is the number of samples of the directional coordinates. Each sub image represents the point of view linked with a direction $(\theta_x, \theta_y)$. The array view can be seen in figure \ref{fig:arrayview1} and \ref{fig:arrayview1z} while the method to pass from the camera view to the array view is illustrated in figure \ref{fig:arrayview}. \\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/imgformation.eps}
+	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/imgformation.eps}
 	\caption{\label{fig:arrayview}The array view is an array of the different point of view obtained rearranging the pixels according to the directional coordinates.  }
 \end{figure}
 An example of the array view parametrization of the raw image in figure \ref{fig:rawlena10} is shown in figure \ref{fig:arrayview1}.\\
@@ -126,12 +126,12 @@ The third and last parametrization of the light field is the 4-D radiance, a fou
 \newpage
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/arrayview.eps}
+	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/arrayview.eps}
 	\caption{\label{fig:arrayview1}Array view of the raw data shown in figure \ref{fig:rawlena10}.  }
 \end{figure}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/arrayviewz.eps}
+	\includegraphics[width=.6\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/arrayviewz.eps}
 	\caption{\label{fig:arrayview1z}Zoom of the central part of the array view showing in detail the different points of views.  }
 \end{figure}
 \newpage
@@ -141,7 +141,7 @@ The act of de-codifying the information present on the sensor of the plenoptic c
 In a conventional 2D image the intensity of each single pixel, corresponding to a position, is obtained by summing the contributions of all the rays of light converging to that point of the sensor \cite{georgiev2010focused} as shown in figure \ref{fig:render1}. This is equivalent to integrating over all possible directions for each position. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/rendering1.eps}
+	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/rendering1.eps}
 	\caption{\label{fig:render1} The intensity of a single pixel is obtained summing all the rays of light coming from all the possible directions.\cite{ng2006digital} }
 \end{figure}
 The same is valid for a computational image, where the integrations are made in post processing from the raw plenoptic data captured.
@@ -164,13 +164,13 @@ I(x,y) = \dfrac{1}{N^2}\sum_{i=0}^N\sum_{j=0}^N L(x,y,i,j)
 This can be seen in the phase space where each pixel of the final image is made by the mean of all N directional samples \cite{georgiev2010focused}, as shown in figure \ref{fig:rendering2}.
  \begin{figure}[H]
  	\centering
- 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/renderingphase.eps}
+ 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/renderingphase.eps}
  	\caption{\label{fig:rendering2} Rendering an image from plenoptic 1.0 raw data is equal to summing all the directional samples for each position. This process is shown for the $(x,\theta_x)$ slice of the phase space. \cite{georgiev2010focused} }
  \end{figure}
  From figure \ref{fig:rendering2} it can be noted that rendering an image from a light field captured by a plenoptic 1.0 camera causes a loss of resolution compared with the image collected by a conventional camera using the full sensor. Each pixel of the final image corresponds to one lenslet. Considering a plenoptic camera composed of a sensor with a resolution of 1000 $\times$ 1000 pixels and a micro lens array of 100 $\times$ 100 lenslets, each sub image will contain 10 $\times$ 10 directional samples. All these samples will contribute in computing the intensity of a single pixel, therefore there will be only one pixel per lenslet in the final image whose resolution is 100 $\times$ 100 pixels. This is the main limitation to plenoptic 1.0 cameras: the better the directional information is sampled, the more spatial resolution is lost \cite{georgiev2010focused, ng2006digital}. An example of a rendered image from a computer generated light field is shown in figure \ref{fig:renderlena}
  \begin{figure}[H]
  	\centering
- 	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/renderlena.eps}
+ 	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/renderlena.eps}
  	\caption{\label{fig:renderlena} rendered image from the raw data in figure \ref{fig:rawlena10}. Resolution is only 75 $\times$ 75 pixels.  }
  \end{figure}
  This loss of resolution arises from the fact that the lenslet array is not focused on the sensor and it produces on the sensor a blurred image \cite{georgiev2010focused}.
@@ -179,7 +179,7 @@ This can be seen in the phase space where each pixel of the final image is made 
  A new kind of plenoptic camera, named focused plenoptic camera or plenoptic camera 2.0, has been proposed by Lumsdaine and Georgiev \textit{et al}. \cite{lumsdaine2008full,lumsdaine2009focused}. As shown in figure \ref{fig:plenoptic2} the plenoptic camera 2.0 is based on an array of micro lenses focused on the image plane of the main lens. In this configuration the sensor plane becomes conjugated with the main lens image plane. As will be discussed in the next sections, in a plenoptic 2.0 camera there is a flexible trade-off between angular and spatial resolution \cite{georgiev2010focused} leading to a full sensor resolution in the final image \cite{bishop2011full,georgiev2009resolution}. There are two possible configurations of the plenoptic 2.0 camera, as shown in figure \ref{fig:pleno201}. In both configurations each micro lens forms on the sensor a relay image of part of the main lens image. The position of the micro array is determined to satisfy the lens equation $1/a+1/b=1/f_{\mu}$, where $a$ is the distance from the main lens image plane to the micro array, $b$ is the distance from the micro array to the sensor plane and $f_{\mu}$ is the focal length of each micro lens. If $b$ is bigger than the focal length $f_{\mu}$ the camera is in a \textit{Copernican configuration} where the main lens image is a real image in front of the micro array, while if $b$ is smaller then $f_{\mu}$, the distance \textit{a} happens to be negative and the main lens image is formed behind the sensor plane. This is called \textit{Galilean configuration} and the micro array images a virtual main lens image (figure \ref{fig:pleno201}) \cite{georgiev2010focused}. 
  \begin{figure}[H]
  	\centering
- 	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/plenoptic201.eps}
+ 	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/plenoptic201.eps}
  	\caption{\label{fig:pleno201} If the main lens image is formed in front of the micro array the configuration is called \textit{Copernican}, top, and the focal length of the micro array is smaller then the distance b. If the main lens image is formed behind the micro array the configuration is \textit{Galilean}, on the bottom, and the focal length of the micro array is bigger then the distance b. }
  \end{figure}
  For both configurations the magnification of the micro array stage is:
@@ -190,17 +190,17 @@ This can be seen in the phase space where each pixel of the final image is made 
  The ratio between the distances $a$ and $b$ plays a crucial role in sampling the light field in the plenoptic camera 2.0. Figure \ref{fig:rawpleno20} shows a raw plenoptic 2.0 image of a point source acquired through simulation (as discussed in chapter \ref{chap:fresnel}). The system is composed of a main lens with a focal length of 60 mm, in a 2f configuration and a micro array made of $150 \mu m$ diameter lenslets with focal length of 5.3 mm. The distances \textit{a} and \textit{b} are set in order to have a magnification \textit{m} of 0.3. In this configuration each point of the main lens image is sampled by three lenslets and each sub image corresponds to a point of view of the object. The number of points of view depends on the magnification of the micro array stage. Hence, in order to have more than one point of view recorded it is necessary that the magnification \textit{m} is less than one. Looking at figure \ref{fig:rawpleno20} the raw image is composed of a 3 $\times$ 3 matrix of sub images, three points of view in the x direction and three along the y direction. Figure \ref{fig:rawpleno203} shows central 5 $\times$ 5 sub images in the raw data. The central sub image records the direction corresponding to the central point of view, indicated in both figures with the number 2. The lenslets on the left and on the right of the central one record the directions corresponding to the point of views from the left, indicated with 1 in figure \ref{fig:rawpleno202}, and right, indicated with 3. The sub images 1 and 3 are shifted towards the outer edge of the sub image. This happens as an effect of the change in the point of view as well as because the sub images are flipped upside down as a consequence of the imaging law.
   \begin{figure}[H]
  	\centering
- 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/rawimage.eps}
+ 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/rawimage.eps}
  	\caption{\label{fig:rawpleno20} Raw data of a point source sampled by a plenoptic 2.0 system with a magnification of the micro array stage equal to 0.3. Data acquired with numerical simulations. }
  \end{figure}
  \begin{figure}[H]
  	\centering
- 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/rawzoom.eps}
+ 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/rawzoom.eps}
  	\caption{\label{fig:rawpleno203} Zoomed raw data of a point source sampled by a plenoptic 2.0 system with a magnification of the micro array stage equal to 0.3. Data acquired with numerical simulations. The grid represent the boundaries of each sub image to show how the point of view of the point source changes across the lenslets. The sub images are shifted by a quantity proportional to the position of the lenslet in the array.  }
  \end{figure}
   \begin{figure}[H]
   	\centering
-  	\includegraphics[width=1  	\textwidth]{C:/Users/Massimo/Documents/Thesis/LFsampling.eps}
+  	\includegraphics[width=1  	\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/LFsampling.eps}
   	\caption{\label{fig:rawpleno202}Sampling of the light field by a plenoptic 2.0 system with a magnification of \textit{m=0.3}. For simplicity the one dimensional case is shown. Each micro lens has a diameter equal to d, a focal length $f_{\mu}$, and images the main lens image on the sensor according to the lens law $1/a+1/b=1/f_{\mu}$ The total range of directions that can be sampled is given by $d/b$. Each lenslet samples a sub set of directions equal to $d/a$ as a single direction. The range of directions shown in red are sampled by the central micro lens as a single point of view. The angular resolution is therefore \textit{d/a} and the total number of directional samples is \textit{a/b = 1/m}. In the specific case shown is 3. }
   \end{figure}
   As in the 1.0 case, the f-number of the micro lenses matches the f-number of the main lens.
@@ -218,7 +218,7 @@ This can be seen in the phase space where each pixel of the final image is made 
   Figure \ref{fig:rawpleno201} shows the effect of magnification on the raw image of a point source. If the magnification is 1, the main lens image is replicated on the sensor under only one lenslet. No further information is given by the micro array stage. The whole range of directions is sampled by a single lenslet and with only one point of view it is not possible to recover the directional information. In order to have more than one point of view, \textit{m} should be at least 0.5. In this case the point source is replicated under a total of four lenslets giving 2 $\times$ 2 points of view to render the image. If the magnification decreases further, the number of points of view increases. The directional information in plenoptic 2.0 is recorded not by a single lenslet like in the 1.0 case, but across many lenslets, since each point of the object plane is imaged by a number of lenslets proportional to the inverse of the magnification \ref{eq:pleno20}. Each lenslet samples a part of the directional coordinates contained into the solid angle \textit{d/a}. The more point of view that are present, the smaller will be the solid angle \textit{d/a}, and therefore, the better will be the angular resolution. \cite{lumsdaine2009focused}
    \begin{figure}[H]
   	\centering
-  	\includegraphics[width=.8\textwidth]{C:/Users/Massimo/Documents/Thesis/rawimages.eps}
+  	\includegraphics[width=.8\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/rawimages.eps}
   	\caption{\label{fig:rawpleno201}Raw images of a point source simulated with different magnifications. From top left to bottom right: \textit{m = 1, m = 0.5, m= 0.25, m = 0.1}. }
   \end{figure}
   \newpage
@@ -273,7 +273,7 @@ This can be seen in the phase space where each pixel of the final image is made 
      With reference to figure \ref{fig:basystem} a single lenslet of diameter \textit{d} is shown and the light field at the sensor plane $L_b(x,p_x)$ is expressed as a function of the coordinates of the light field at the main lens image plane $L_a(x,p_x)$. The link between the two light fields is given by equation \ref{eq:transmatrix5}. According to geometrical optics, and as is explained in Georgiev \textit{et al.}\cite{georgiev2011plenoptic}, the optical transfer matrix $A_{ab}$ from the main lens image plane and the sensor is the composition of two free space propagation matrices and a lens matrix.
       \begin{figure}[H]
       	\centering
-      	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/singlelens.eps}
+      	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/singlelens.eps}
       	\caption{\label{fig:basystem} System formed by a single lenslet. The rays at the main lens image plane are transformed into the rays at the sensor plane by the lenslet. The transformation can be described by a matrix \textit{A}. }
       \end{figure}
 Therefore:
@@ -321,7 +321,7 @@ Therefore:
    From equation \ref{eq:radiance2} the micro lens maps the spatial coordinates on the main lens image plane to the sensor with a scaling factor equal to the magnification $m=b/a$. Therefore the resolution of the sampled light field on the sensor is $b/a$ times the resolution of the sensor. The directional coordinates are mapped as $x/b$. If the lenslet diameter is $d$ then the maximum number of directional coordinates sampled by one lenslet is equal to the f-number of the lenslet $d/b$. Figure \ref{fig:basystem} shows how a single micro lens samples the radiance from a single point X on the main lens image plane. Each pixel of the micro lens image samples a single position X and a span of $d/a$ directional coordinates $p_x$. The same position X is sampled also by other micro-lenses as shown in figure \ref{fig:phaseba}, but since each micro lens only captures $d/a$ samples of the directional coordinates, each lenslet samples a different portion of the total span of directional coordinates contained in the light field.
    \begin{figure}[H]
    	\centering
-   	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/smapling1.eps}
+   	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/smapling1.eps}
    	\caption{\label{fig:phaseba} Sampling of the light field by plenoptic 2.0 camera. For each of the two points represented, red and green, The total range of directional coordinates are sampled by three  different lenslets. For one position three directions are sampled, with a resolution of d/a. Therefore the directional sampling in plenoptic 2.0 is made across many lenslets. This can be seen in the phase space. Lenset B and C sample 2 directions indicated with the same number in the ray diagram and the phase space. Lens let A only samples one direction of the red point.   }
    \end{figure}
    \section{Plenoptic 2.0 Rendering}
@@ -329,7 +329,7 @@ Therefore:
    The basic rendering in plenoptic 2.0 cameras is still made by integrating all directions associated to a single position, as shown \ref{eq:pleno20}. The difference with plenoptic 1.0 rendering is that this time the directional coordinates for a single position, $d/b$, are recorded across many lenslets, each sampling $d/a$ coordinates and as a consequence of that, the integration takes place across all of these micro lenses \cite{georgiev2006light}. The basic rendering process is shown in figure \ref{fig:render20}.
    \begin{figure}[H]
    	\centering
-   	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/rendering20b.eps}
+   	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/rendering20b.eps}
    	\caption{\label{fig:render20} Image rendering with the focused plenoptic camera. One pixel of the rendered image is given by the integration on all the directions $d/b$ associated with a given position. The integration takes place across the lenslet and is represented by the vertical lines. Each lenslet is represented by the diagonal lines. }
    \end{figure}
    Rendering an image in plenoptic 2.0 is more complicated and less intuitive then the 1.0 case, therefore a more detailed analysis of plenoptic 2.0 rendering will be given in chapter \ref{chap:chapter5}.
