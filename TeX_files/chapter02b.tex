@@ -2,14 +2,14 @@
 \markboth{\MakeUppercase{Fresnel Simulation Toolbox: applications}}{}
 \label{chap:fresnel2}
 \section{Introduction}
-This chapter will describe more in details the performance of the different free space propagation operators described in the previous chapter. Some examples of how they can be used to simulate of an optical system will also be presented. Particular attention will be given to the differences between the different operators in terms of signal to noise ratio.
+This chapter will describes in details the performance of the different free space propagation operators described in the previous chapter. Some examples of how they can be used to simulate of an optical system will also be presented and some example of the Matlab code used to run the simulations will be presented. Particular attention will be given to the differences between the different operators in terms of signal to noise ratio.
 It will also be largely described how to simulate partially coherent light. An original method to simulate both spatial and temporal coherence will be presented. Results form the numerical simulations will also be presented to support the theoretical model and to optimise the parameters.
 \section{Performances of the Angular Spectrum Methods}
  \label{sec:perfAS}
- To evaluate the differences in resolution of the three variants of the angular spectrum methods, Normal Angular spectrum (AS), Band Limited angular spectrum (BL), and Corrected Band Limited Angular Spectrum (CBL) presented in chapter \ref{chap:fresnel}, a simulation has been implemented consisting of a free space propagation of an input field with a circular pupil of diameter 5 mm, sampled with a resolution of 3000 $\times$ 3000 pixels with a sampling window of 1 cm. The propagation distances \textit{z} varied from 1 m to 10 m.\\ 
+ To evaluate the differences in resolution of the three variants of the angular spectrum methods, normal Angular spectrum (AS), Band Limited Angular Spectrum (BL), and Corrected Band Limited Angular Spectrum (CBL) presented in chapter \ref{chap:fresnel}, a simulation has been implemented consisting of a free space propagation of a constant input field with a circular pupil of diameter 5 mm, sampled with a resolution of 3000 $\times$ 3000 pixels with a sampling window of 1 cm. The propagation distances \textit{z} varied from 1 m to 10 m. The wavelength used was of 633 nm, corresponding to the red Helium-Neon Laser. Performances have been evaluated experimentally through the simulations.\\ 
  Results are shown in figure \ref{fig:methods} where the cross section of the diffraction patterns are shown. 
  The BL method shown in the central column gives smooth diffraction patterns. Increasing the propagation distance however leads to the intensity profile losing part of the information because of the excessive low pass filtering on the propagation transfer function, leading the complete loss of the diffraction fringes. A comparison with the AS can be seen in figure \ref{fig:methods}, where the diffraction fringes are presents with the superimposition of the noise due to aliasing in the transfer function sampling. This affects the resolution of the diffraction pattern and the signal to noise ratio (SNR) drops with \textit{z} as shown in figure \ref{fig:SNR1}.The CBL method gives a good noise reduction without losing the original signal shape as explained in section \ref{sec:angular3} and as it is shown in figure \ref{fig:methods} on the far right column. Fringes are clearly present in the diffraction pattern even for large propagation distances and the noise is removed. \\
- In figure figure \ref{fig:SNR1} the SNR of the diffraction patterns in figure \ref{fig:methods} is plotted as a function of the propagation distance for the three examined cases. The BL method gives a better SNR especially for short propagation distances, where the bandwidth of the transfer function is not low pass filtering the signal yet, but only avoiding the aliasing. Its values remains in general above the SNR of the CBL method (almost 15dB), even in the case of large propagation distances. This is due to the excessive smoothing action that leads to the loss of resolution. On the other hand without any bandwidth limitation, AS, green line, the aliasing generated noise becomes dominant for long propagation distances and the SNR approaches the 0 dB value. The best results in terms of resolution and noise reduction are given by the corrected BL method where the information on the diffraction is entirely kept. 
+ In figure figure \ref{fig:SNR1} the SNR of the diffraction patterns in figure \ref{fig:methods} is plotted as a function of the propagation distance for the three examined cases. The BL method gives a better SNR especially for short propagation distances, where the bandwidth of the transfer function is not low pass filtering the signal yet, but only avoiding the aliasing. Its values remains in general above the SNR of the CBL method (almost 15dB), even in the case of large propagation distances. This is due to the excessive smoothing action that leads to the loss of resolution. On the other hand without any bandwidth limitation, AS, green line, the aliasing generated noise becomes dominant for long propagation distances and the SNR approaches the 0 dB value. The best results in terms of resolution and noise reduction are given by the corrected BL method where the information on the diffraction is retained entirely.
  \begin{figure}[h]
  	\begin{center}
  		\begin{tabular}{c}
@@ -26,8 +26,9 @@ It will also be largely described how to simulate partially coherent light. An o
  		\end{tabular}
  	\end{center}
  	\caption{ \label{fig:methods} 
- 		Comparison of the performances of the three angular spectrum propagation operator. On the left column are shown diffraction pattern cross section obtained using the angular spectrum method (AS). In the central column the pattern for the same propagation distances have been obtained using the band limited method (BL) and in the right column the same patterns have been obtained using the correct band limited method (corrected BL). }
+ 		Comparison of the performances of the three angular spectrum propagation operator. Diffraction patterns of a 5mm pupil obtained by the simulations. On the left column are shown diffraction pattern cross section obtained using the angular spectrum method (AS). In the central column the pattern for the same propagation distances have been obtained using the band limited method (BL) and in the right column the same patterns have been obtained using the correct band limited method (corrected BL). }
  \end{figure}
+ 
  \section{Comparison between the Free Space Propagation Operators}
  \label{sec:comp}
 	 In this section the differences in performance between the Fresnel approximation and the angular spectrum of plane waves approach will be shown with particular attention to the computational time required by the different methods, the optical resolution and the error. Results will be used to evaluate the characteristic of the different propagation operators. These results differ from the ones obtained in section \ref{sec:perfAS} since the simulations in this case involve the whole imaging system including the lens and not only the free space propagation.
@@ -156,7 +157,7 @@ R is the distance between the screen A and the source, $S=\Delta x^2$ is the are
 The area of coherence quantifies the degree of spatial coherence. It depends on the area of the light source S, the distance of observation R and the wavelength of the light. 
 \subsection{Simulation of Spatial Coherence}
 \label{sec:spatial}
-A novel method for simulating spatial coherence that generates a source optical field with a degree of coherence defined by the user was developed and described below. An electromagnetic wave is generated by a dipole oscillating at a certain frequency. This dipole can be a molecule, an atom, a group of atoms in a gas. In case of a conventional incandescence light source light is emitted by tungsten atoms exited by the electrical current. This is also true for other sources of illuminations, like gas lamps, neon, or solid state light sources like LED; atoms of molecules excited to higher energy level emit light when dropping on the ground energy level. Each dipole emits light with a certain initial phase. Considering a light source of surface $\Sigma$ containing oscillating dipoles, the elemental surfaces $d\Sigma$ is defined as the surfaces on which all the dipoles oscillates with the same phase. The average dimension of the elemental surfaces $d\Sigma$ is proportional to the degree of spatial coherence of the light source. The more coherent the light source, the bigger the elemental surfaces will be. 
+The goal of this section is to define a novel method for simulating spatial coherence in order to generate partially coherent optical fields. An electromagnetic wave is generated by a dipole oscillating at a certain frequency. This dipole can be a molecule, an atom, a group of atoms in a gas. In case of a conventional incandescence light source, light is emitted by tungsten atoms excited by the electrical current. This is also true for other sources of illuminations, like gas lamps, neon, or solid state light sources like LED; atoms of molecules excited to higher energy levels emit light when dropping to the ground energy level. Each dipole emits light with a certain initial phase. Considering a light source of surface $\Sigma$ containing oscillating dipoles, the elemental surfaces $d\Sigma$ is defined as the surfaces on which all the dipoles oscillate with the same phase. The average size and dimensionality of the elemental surfaces $d\Sigma$ is proportional to the degree of spatial coherence of the light source. The more coherent the light source, the bigger the elemental surfaces will be. 
 From a computational point of view having a light source composed of a mosaic of surfaces with different phases is equivalent to adding a phase mask to the input field. This phase mask is composed of areas with a random phase value. The dimension of these areas gives an idea of the degree of spatial coherence. The idea behind the empirical method used to generate the phase mask is shown in figure \ref{fig:phasemask1}: 
 \begin{figure}[H]
 	\begin{center}
@@ -204,6 +205,40 @@ The algorithm to generate the random phase mask can be summarized as follow:
  \item the resultant phase is used as the output phase mask to add the input field.
 \end{itemize}
 \newpage
+\subsection{Optimization of Spatial Coherence}
+Simulations have been run propagating an optical disturbance with phase masks generated with different values of the parameter \textit{C} with the purpose of defining the optimal number of sources to generate a phase mask that produces a final images with a hogh signal to noise ratio.
+The input field used is the USAF resolution target, shown in figure \ref{fig:USAF}
+\begin{figure}[H]
+	\begin{center}
+		\begin{tabular}{c}
+			\includegraphics[height=3cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/USAF.eps}
+		\end{tabular}
+	\end{center}
+	\caption{ \label{fig:USAF} 
+		USAF resolution target. }
+\end{figure} 
+The first simulation has been made changing the coherence index $C$ from a value of 5 (high coherence) to 500 (low coherence) in a sampling window with a resolution of 1765 by 1765 pixels.
+Figure \ref{fig:spatialsnr2} shows how the field at the image plane for different values of \textit{C} appears, while figure \ref{fig:spatialsnr1} shows a plot of the signal to noise ratio of the images as a function of the coherence index showing an asymptotic behaviour. After a certain threshold value of $C$, increasing the coherence index does not improve the image quality. The threshold is defined as the value of $C$ for which the variance of the previous five values of SNR is less then 0.01.
+Figure \ref{fig:spatialsnr1} shows that for values of $C$ bigger than 250 the SNR asymptotically tends to 18 dB. In this case the resolution of the input field, and therefore of the phase mask, is 1765 by 1765 pixels, so that the SNR reaches the asymptote when the ratio between the number of sources and the resolution is 0.14. After this point, there is no gain in making the light source more incoherent in terms of signal to noise ratio improvement.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.4\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/iota.eps}
+	\caption{\label{fig:spatialsnr2}Images of the USAF resolution target with different values of $\iota$. Increasing the number of point sources generating the phase mask leads to more incoherent imaging, leading to improved resolution. Images where obtained with 300 iterations.}
+\end{figure}
+The ratio between the number of sources \textit{C} and the resolution of the optical field \textit{N} is defined as the incoherence degree $\iota$:
+\begin{equation}
+\label{eq:incoherence_degree}
+\iota = \dfrac{C}{N}
+\end{equation}
+\newpage
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/SNRspatial.eps}
+	\caption{\label{fig:spatialsnr1}Signal to noise ratio of the image of a USAF resolution target plotted as a function of the coherence index $C$.}
+\end{figure}
+The image quality evaluated using the signal to noise ratio improves with the increasing of the sources used to generate the phase mask. However it reaches an asymptote after 250 sources. This is due to the fact that the interference effects due to low coherence decrease, improving image quality. 
+\newpage
 \subsection{Simulation of Temporal Coherence}
 \label{sec:simtempcoherence}
  As discussed in section \ref{sec:temp}, temporal coherence is defined by the time $\tau$ in which the optical wave is correlated with itself. In other words after a time $t=\tau$, the optical disturbance $U(t)$ and $U(t+\tau)$ are totally uncorrelated and cannot interfere with each other. 
@@ -225,61 +260,28 @@ To simulate this effect many snapshots of the output field are taken each time u
 which is equal to $\tau=6.6\times10^{-17} s$. 
  Therefore each snapshot is assumed to be taken at the image plane at an interval of $\tau$. 
  All the snapshots are then added together, integrating the optical disturbance over time. Longer integration times will give better contrast and less noise while approaching to the incoherent imaging as it is shown in the following paragraph.
- \section{Optimization of Coherence Parameters}
- The previous section described how partially coherent light is simulated and how an algorithm that produces a certain number of snapshots of the output field, each one with a different random phase, was implemented. The random phase mask simulates the spatial coherence, the number of iteration instead simulates the effects of temporal coherence.
- \subsection{Optimization of Spatial Coherence}
- Simulations have been run propagating an optical disturbance with phase masks generated with different values of the parameter \textit{C}.
- The input field is the USAF resolution target, shown in figure \ref{fig:USAF}
- \begin{figure}[H]
- 	\begin{center}
- 		\begin{tabular}{c}
- 			\includegraphics[height=4cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/USAF.eps}
- 		\end{tabular}
- 	\end{center}
- 	\caption{ \label{fig:USAF} 
- 		USAF resolution target. }
- \end{figure} 
- The first simulation has been made changing the coherence index $C$ from a value of 5 (high coherence) to 500 (low coherence) in a sampling window with a resolution of 1765 by 1765 pixels.
- Figure \ref{fig:spatialsnr2} shows how the field at the image plane for different values of \textit{C} appears, while figure \ref{fig:spatialsnr1} shows a plot of the signal to noise ratio of the images as a function of the coherence index showing an asymptotic behaviour. After a certain threshold value of $C$, increasing the coherence index does not improve the image quality. The threshold is defined as the value of $C$ for which the variance of the previous five values of SNR is less then 0.01.
-Figure \ref{fig:spatialsnr1} shows that for values of $C$ bigger than 250 the SNR asymptotically tends to 18 dB. In this case the resolution of the input field, and therefore of the phase mask, is 1765 by 1765 pixels, so that the SNR reaches the asymptote when the ratio between the number of sources and the resolution is 0.14. After this point, there is no gain in making the light source more incoherent in terms of signal to noise ratio improvement.
-The ratio between the number of sources \textit{C} and the resolution of the optical field \textit{N} is defined as the incoherence degree $\iota$:
-\begin{equation}
-\label{eq:incoherence_degree}
-\iota = \dfrac{C}{N}
-\end{equation}
-\begin{figure}[H]
- 	\centering
- 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/iota.eps}
- 	\caption{\label{fig:spatialsnr2}Images of the USAF resolution target with different values of $\iota$. Increasing the number of point sources generating the phase mask leads to more incoherent imaging, leading to improved resolution. Images where obtained with 300 iterations.}
- \end{figure}
- \begin{figure}[H]
- 	\centering
- 	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/SNRspatial.eps}
- 	\caption{\label{fig:spatialsnr1}Signal to noise ratio of the image of a USAF resolution target plotted as a function of the coherence index $C$.}
- \end{figure}
- \newpage
  \subsection{Optimization of Temporal Coherence}
-The second simulation run aimed to define the optimum number of snapshots in order to correctly simulate temporal coherence. The random phase mask acts as a diffuser, and the resultant output field obtained by a single snapshot will present a low signal to noise ratio due to speckles, as shown in figure \ref{fig:speckle}
+The second simulation run aimed to define the optimum number of snapshots in order to remove temporal coherence effects. The random phase mask acts as a diffuser, and the resultant output field obtained by a single snapshot will present a low signal to noise ratio due to speckles, as shown in figure \ref{fig:speckle}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/USAF5iter.eps}
-	\caption{\label{fig:speckle}Noise due to the speckles in an image of a USAF resolution target after only 5 iterations.}
+	\caption{\label{fig:speckle}Noise due to the speckles in an image of a USAF resolution target after only 5 snapshots.}
 \end{figure}
-Taking several snapshots and adding them all together is equal to an integration over time of the optical field reaching the sensor. While increasing the integration time, the noise due to the speckles drops considerably. Figure \ref{fig:iter} shows several images of the USAF target in figure \ref{fig:USAF} taken with an incoherence degree of $\iota=0.14$, and with an increasing number of iterations form 5 to 1000.
+Taking several snapshots and adding them all together is equal to an integration over time of the optical field reaching the sensor. While increasing the integration time, the noise due to the speckles drops considerably. Figure \ref{fig:iter} shows several images of the USAF target in figure \ref{fig:USAF} taken with an incoherence degree of $\iota=0.14$, and with an increasing number of snapshots from 5 to 1000.
  \begin{figure}[H]
  	\centering
  	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/iter.eps}
- 	\caption{\label{fig:iter}Images of the USAF resolution target obtained adding an increasing number of snapshot. this is equivalent to increase the integration time of the sensor. The noise due to the speckles caused by the phase mask decreases with increasing number of iterations.}
+ 	\caption{\label{fig:iter}Images of the USAF resolution target obtained adding an increasing number of snapshot. this is equivalent to increase the integration time of the sensor. The noise due to the speckles caused by the phase mask decreases with increasing number of snapshots. images are obtained summing the snapshots, therefore they do not have the same brightness.}
  \end{figure}
- Since increasing the number of iterations is computationally expensive, the signal to noise ratio of the images in figure \ref{fig:iter} has been evaluated and plotted as a function of the number of iteration in order to define an optimal parameter. Results are shown in figure \ref{fig:SNRiter}. The threshold is defined as the number of iterations for which the variance of the previous five values of SNR is less then 0.01.
+ Since increasing the number of snapshots is computationally expensive, the signal to noise ratio of the images in figure \ref{fig:iter} has been evaluated and plotted as a function of the number of snapshots in order to define an optimal parameter. Results are shown in figure \ref{fig:SNRiter}. The threshold is defined as the number of snapshots for which the variance of the previous five values of SNR is less then 0.01.
  \begin{figure}[H]
  	\centering
  	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/SNRtemporal.eps}
  	\caption{\label{fig:SNRiter}Signal to noise ratio as a function of the number of iterations. The threshold has been calculated looking at the variance of the previous five data.}
  \end{figure}
- For an image with an incoherence degree of $\iota=0.14$ the number of iterations after the SNR of the image does not improve further is 350. After that value the SNR tends asymptotically to 18 dB in spite of an increased computational effort. Therefore from a SNR point of view the optimal number of iteration to simulate temporal incoherence is 350. All the other simulations presented in this work will be performed with the coherence parameters discussed in this section. 
+ For an image with an incoherence degree of $\iota=0.14$ the number of iterations after which the SNR of the image does not improve further is 350. After that value the SNR tends asymptotically to 18 dB in spite of an increased computational effort. Therefore from a SNR point of view the optimal number of iteration to simulate temporal incoherence is 350. All the other simulations presented in this work will be performed with the coherence parameters discussed in this section. 
 \subsection{Coherent Imaging vs Incoherent Imaging}
-The image of an edge has been simulated to make a comparison between the coherent and the incoherent system response. Data were simulated with the same optical parameters described in section \ref{sec:system}. The intensity profile of an image of an edge is well known both in the case of coherent and incoherent illumination and provides a means of verification for the simulation methodology discussed above. Figure \ref{fig:coherenceprofile} shows the response of a coherent and an incoherent imaging systems to a sharp edge. The intensity profile of the edge is shown in green, its coherent image in blue and the incoherent image is shown in red. The coherent image presents fringes whose amplitude decreases further away form the edge. This effect is known as ringing artefacts, due to the coherent transfer function that usually presents rapid discontinuities \cite{goodman2005introduction}. Another property of the coherent image is that it crosses the actual location of the edge at 1/4 of its asymptotic value of intensity, while the incoherent image does the same at 1/2 of its asymptotic value, as can be seen in figure \ref{fig:coherenceprofile} \cite{goodman2005introduction}. Both conditions are verified by the simulations run as shown in figure \ref{fig:coherenceprofile}. \\
+The image of an edge has been simulated to make a comparison between the coherent and the incoherent system response. Data were simulated with the same optical parameters described in section \ref{sec:system}. The intensity profile of an image of an edge is well known both in the case of coherent and incoherent illumination and provides a means of verification for the simulation methodology discussed above. Figure \ref{fig:coherenceprofile} shows the response of a coherent and an incoherent imaging systems to a sharp edge. The intensity profile of the edge is shown in green, its coherent image in blue and the incoherent image is shown in red. The coherent image presents fringes whose amplitude decreases further away from the edge. This effect is known as ringing artefacts, due to the coherent transfer function that usually presents rapid discontinuities \cite{goodman2005introduction}. Another property of the coherent image is that it crosses the actual location of the edge at 1/4 of its asymptotic value of intensity, while the incoherent image does the same at 1/2 of its asymptotic value, as can be seen in figure \ref{fig:coherenceprofile} \cite{goodman2005introduction}. Both conditions are verified by the simulations run as shown in figure \ref{fig:coherenceprofile}. \\
 \\
 \\
 \begin{figure}[H]
@@ -287,6 +289,8 @@ The image of an edge has been simulated to make a comparison between the coheren
 	\includegraphics[width=.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/2dedge.eps}
 	\caption{\label{fig:coherenceprofile}Comparison between the coherent and an incoherent response of a simple 2f system to a sharp edge.}
 \end{figure}
+\section{Conclusions}
+In this  chapter it was shown how the methods described in chapter \ref{chap:fresnel} can be implemented in the simulation toolbox. The performance of the different free space propagation methods evaluated using the results from the simulations were presented. 
 \nomenclature{$\overrightarrow{E}$}{Electric field}
 \nomenclature{$\overrightarrow{H}$}{Magnetic field}
 \nomenclature{$\epsilon$}{Electrical permittivity}

@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.2.3}The Fresnel Approximation}{89}
 \contentsline {section}{\numberline {2.3}Free Space Propagation Operator: Fresnel Approximation Approach}{90}
 \contentsline {subsection}{\numberline {2.3.1}Multi-Step Fresnel Propagation Operator}{91}
-\contentsline {section}{\numberline {2.4}Free Space Propagation Operator: Angular Spectrum of Plane Waves Approach}{93}
+\contentsline {section}{\numberline {2.4}Free Space Propagation Operator: Angular Spectrum of Plane Waves Approach}{94}
 \contentsline {subsection}{\numberline {2.4.1}Angular Spectrum of Plane Waves}{94}
 \contentsline {subsection}{\numberline {2.4.2}Band Limited Angular Spectrum}{98}
 \contentsline {subsection}{\numberline {2.4.3}Corrected Band Limited Angular Spectrum Method}{104}
@@ -28,19 +28,19 @@
 \contentsline {section}{\numberline {2.6}Conclusions}{114}
 \contentsline {chapter}{\numberline {3}Fresnel Simulation Toolbox: applications}{117}
 \contentsline {section}{\numberline {3.1}Introduction}{117}
-\contentsline {section}{\numberline {3.2}Performances of the Angular Spectrum Methods}{117}
-\contentsline {section}{\numberline {3.3}Comparison between the Free Space Propagation Operators}{121}
-\contentsline {subsection}{\numberline {3.3.1}Description of the System}{121}
-\contentsline {subsection}{\numberline {3.3.2}Image of a Point Source}{122}
-\contentsline {section}{\numberline {3.4}Coherence}{127}
-\contentsline {subsection}{\numberline {3.4.1}Temporal Coherence}{128}
-\contentsline {subsection}{\numberline {3.4.2}Spatial Coherence}{128}
-\contentsline {subsection}{\numberline {3.4.3}Simulation of Spatial Coherence}{130}
-\contentsline {subsection}{\numberline {3.4.4}Simulation of Temporal Coherence}{136}
-\contentsline {section}{\numberline {3.5}Optimization of Coherence Parameters}{137}
-\contentsline {subsection}{\numberline {3.5.1}Optimization of Spatial Coherence}{137}
-\contentsline {subsection}{\numberline {3.5.2}Optimization of Temporal Coherence}{141}
-\contentsline {subsection}{\numberline {3.5.3}Coherent Imaging vs Incoherent Imaging}{144}
+\contentsline {section}{\numberline {3.2}Performances of the Angular Spectrum Methods}{118}
+\contentsline {section}{\numberline {3.3}Comparison between the Free Space Propagation Operators}{122}
+\contentsline {subsection}{\numberline {3.3.1}Description of the System}{122}
+\contentsline {subsection}{\numberline {3.3.2}Image of a Point Source}{123}
+\contentsline {section}{\numberline {3.4}Coherence}{128}
+\contentsline {subsection}{\numberline {3.4.1}Temporal Coherence}{129}
+\contentsline {subsection}{\numberline {3.4.2}Spatial Coherence}{129}
+\contentsline {subsection}{\numberline {3.4.3}Simulation of Spatial Coherence}{131}
+\contentsline {subsection}{\numberline {3.4.4}Optimization of Spatial Coherence}{137}
+\contentsline {subsection}{\numberline {3.4.5}Simulation of Temporal Coherence}{140}
+\contentsline {subsection}{\numberline {3.4.6}Optimization of Temporal Coherence}{141}
+\contentsline {subsection}{\numberline {3.4.7}Coherent Imaging vs Incoherent Imaging}{145}
+\contentsline {section}{\numberline {3.5}Conclusions}{146}
 \contentsline {chapter}{\numberline {4}Simulations of a Plenoptic 1.0 System}{147}
 \contentsline {section}{\numberline {4.1}Introduction}{147}
 \contentsline {section}{\numberline {4.2}Description of the System}{148}
