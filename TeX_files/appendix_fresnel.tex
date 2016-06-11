@@ -1,0 +1,50 @@
+\chapter*{Fresnel Simulation Toolbox: Function list}
+List of the main functions used in the toolbox. 
+\begin{center}
+    \begin{tabular}{| p{8cm} | p{6cm} |}
+    \hline
+    Function & Description \\ \hline 
+    OutField = Angular(InField, distance, wavelength) & Gives the monochromatic optical field after a propagation set by the parameter distance using the angular spectrum method \\ \hline
+    OutField = AngularBL(InField, distance, wavelength) & Gives the monochromatic optical field after a propagation set by the parameter distance using the band-limited angular spectrum method \\ \hline
+    OutField = AngularBLC(InField, distance, wavelength) & Gives the monochromatic optical field after a propagation set by the parameter distance using the Corrected band-limited angular spectrum method \\ \hline
+    [Grid, centres] = getMicroarrayGrid(Resolution, subimgeResolution, b, z) & Returns the grid to separate the sub images in a plenoptic 2.0 raw data image and the centres of the sub images. Input parameters are the total reolution of the sensor, the sub image resolution, the parameter b and the disance z of the microarray from the main lens \\ \hline
+            
+        \hline
+    \end{tabular}
+\end{center}
+\newpage
+\begin{center}
+	\begin{tabular}{| p{8cm} | p{6cm} |}
+		\hline
+		Function & Description \\ \hline 
+		    L = LightField(rawImage, microlensNumber) & returns the 4-dimentional light field for the plenoptic 1.0 raw image rawImage obtained by a square microarray contining microlensNumber microlens per side. \\ \hline
+		    
+		    M = MakeArray(f,d,sensorSize, sensorReolution, lambda) & Returns a phase mask simulating an array of microlens with focal length f, diameter d on a sensor wize a size sensorSize in meters, and a resolution of sensorResolution pixels. lambda is the wavelength of the simulated light. \\ \hline
+		    
+	IMG = makeImage(L) & returns the rendered image from the 4-dimentional light field L \\ \hline
+
+	 Lens = Makelens(f, size, radius, resolution, wavelength) & Returns a phase mask representing a thin lens with focal length f, in a plane whose size is equal to the parameter size and resolution equal to the parameter resolution, with a radius given by radius for ligth with wavelength wavelength \\ \hline
+	 
+	 
+	  OutField = Propagate(InField, distance, wavelength) & Gives the monochromatic optical field after a propagation set by the parameter distance using the multi-step fresnel propagation method \\ \hline 
+	 
+	 IMG = render20(raw,m,b,z,res) & returns the rendered image from a plenoptic 2.0 raw data raw, obtained by a system with magnification m, distance mcroarray-sensor b, distance microarray-main lens z and resolution res \\ \hline
+	 
+		
+		
+		\hline
+	\end{tabular}
+\end{center}
+\newpage
+\begin{center}
+	\begin{tabular}{| p{8cm} | p{6cm} |}
+		\hline
+		Function & Description \\ \hline 
+		Mask = randPhase(coherenceIndex, resolution) & Returns a phase mask to simulate partially spatial coherence given the coherence index and the resolution of the mask \\ \hline
+		refocused = refocus20(raw, def, z1, z2, fLens, fMicro, a) & Returns the refocused rendered image from the plenoptic 2.0 raw data raw, a defocus of def and system parameters indicated in the argument of the function. \\ \hline
+		L1 = shear(L, defocus) & returns the 4-D light field L1 obtained shearing the original light field L of a quantity proportional to the defocus indicated \\ \hline 
+		
+		
+		\hline
+	\end{tabular}
+\end{center}

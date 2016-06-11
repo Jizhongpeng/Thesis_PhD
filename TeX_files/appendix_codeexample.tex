@@ -1,0 +1,102 @@
+\chapter*{Code exmples}
+\section*{Simple 2f sistem}
+Code used to implement the system described in figure \ref{fig:2f}.\\
+\begin{listing}
+
+\%repeats the cycle for n times in order to created and\\ \%incoherent image with n snapshots\\
+for k=1:n
+
+\%creates random phase pattern\\
+Y=randphaseSources(coherenceDegree,m);\\
+
+\%multiply the random phase by the optical field\\
+
+buffer=P.field.*Y;\\
+Pbuffer.field=buffer;\\
+
+\%propagates the optical field of 2f \\
+F=AngularBLC(Pbuffer,z1,lambda);
+
+\%lens \\
+F1=throughlens(F,L,lambda);\\
+
+\%second propagation\\
+F2=AngularBLC(F1,z2,lambda);\\
+
+
+\%add the optical field to the one previously calculated\\
+FIELD=FIELD+abs(F3.field);\\
+
+end\\
+
+OutField=FIELD;	\\
+\end{listing}
+
+\section*{Plenoptic 1.0 system}
+Code used to implement the system described in figure \ref{fig:pleno10_system}\\
+\begin{listing}
+for k=1:n
+\\
+\%creates random phase pattern\\
+Y=randphaseSources(coherenceDegree,m);\\
+
+\%creates random phase optical field
+\\
+buffer=P.field.*Y;
+Pbuffer.field=buffer;
+
+\%propagates the optical field \\
+F=AngularBL(Pbuffer,z1,lambda);\\
+
+\%lens \\
+F1=throughlens(F,L,lambda);\\
+
+\%second propagation \\
+F2=AngularBL(F1,z2,lambda);\\
+
+\%microlens array\\
+F2.field=F2.field.*M.field;\\
+
+\%Propagation microarray sensor\\
+F3=AngularBL(F2,z3,lambda);\\
+
+\%add the optical field to the one previosly calculated\\
+FIELD=FIELD+abs(F3.field);\\
+
+
+end
+
+
+F3.field=FIELD;	
+\end{listing}
+
+\section*{Plenoptic 2.0 system}
+Code used to implement the system described in figure  \ref{fig:sys}
+\begin{listing}
+for k=1:n\\
+\%creates random phase pattern\\
+Y=randphaseSources(coherenceDegree,m-1);\\
+
+\%creates random phase optical field\\
+buffer=P.field.*Y;\\
+Pbuffer.field=buffer;\\
+
+\%propagates the optical field\\
+F=AngularBLC(Pbuffer,z1,lambda);\\
+
+\%lens \\
+F1=throughlens(F,L,lambda);\\
+
+\%second propagation\\
+F2=AngularBLC(F1,z2+a,lambda);\\
+
+\%microlens array\\
+F2.field=F2.field.*M.field;
+
+\%Propagation microarray sensor\\
+F3=AngularBLC(F2,b,lambda);\\
+
+\%add the optical field to the one previosly calculated\\
+FIELD=FIELD+abs(F3.field);\\
+end	\\
+\end{listing}
