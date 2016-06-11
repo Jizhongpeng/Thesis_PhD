@@ -206,40 +206,6 @@ The algorithm to generate the random phase mask can be summarized as follow:
 \end{itemize}
 These considerations lead to correct results as proven by the simulation of the image of an edge presented in section \ref{sec:coherencevsinco}.
 \newpage
-\subsection{Optimization of Spatial Coherence}
-Simulations have been run propagating an optical disturbance with phase masks generated with different values of the parameter \textit{C} with the purpose of defining the optimal number of sources to generate a phase mask that produces a final images with a hogh signal to noise ratio.
-The input field used is the USAF resolution target, shown in figure \ref{fig:USAF}
-\begin{figure}[H]
-	\begin{center}
-		\begin{tabular}{c}
-			\includegraphics[height=3cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/USAF.eps}
-		\end{tabular}
-	\end{center}
-	\caption{ \label{fig:USAF} 
-		USAF resolution target. }
-\end{figure} 
-The first simulation has been made changing the coherence index $C$ from a value of 5 (high coherence) to 500 (low coherence) in a sampling window with a resolution of 1765 by 1765 pixels.
-Figure \ref{fig:spatialsnr2} shows how the field at the image plane for different values of \textit{C} appears, while figure \ref{fig:spatialsnr1} shows a plot of the signal to noise ratio of the images as a function of the coherence index showing an asymptotic behaviour. After a certain threshold value of $C$, increasing the coherence index does not improve the image quality. The threshold is defined as the value of $C$ for which the variance of the previous five values of SNR is less then 0.01.
-Figure \ref{fig:spatialsnr1} shows that for values of $C$ bigger than 250 the SNR asymptotically tends to 18 dB. In this case the resolution of the input field, and therefore of the phase mask, is 1765 by 1765 pixels, so that the SNR reaches the asymptote when the ratio between the number of sources and the resolution is 0.14. After this point, there is no gain in making the light source more incoherent in terms of signal to noise ratio improvement.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.4\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/iota.eps}
-	\caption{\label{fig:spatialsnr2}Images of the USAF resolution target with different values of $\iota$. Increasing the number of point sources generating the phase mask leads to more incoherent imaging, leading to improved resolution. Images where obtained with 300 iterations.}
-\end{figure}
-The ratio between the number of sources \textit{C} and the resolution of the optical field \textit{N} is defined as the incoherence degree $\iota$:
-\begin{equation}
-\label{eq:incoherence_degree}
-\iota = \dfrac{C}{N}
-\end{equation}
-\newpage
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/SNRspatial.eps}
-	\caption{\label{fig:spatialsnr1}Signal to noise ratio of the image of a USAF resolution target plotted as a function of the coherence index $C$.}
-\end{figure}
-The image quality evaluated using the signal to noise ratio improves with the increasing of the sources used to generate the phase mask. However it reaches an asymptote after 250 sources. This is due to the fact that the interference effects due to low coherence decrease, improving image quality. 
-\newpage
 \subsection{Simulation of Temporal Coherence}
 \label{sec:simtempcoherence}
  As discussed in section \ref{sec:temp}, temporal coherence is defined by the time $\tau$ in which the optical wave is correlated with itself. In other words after a time $t=\tau$, the optical disturbance $U(t)$ and $U(t+\tau)$ are totally uncorrelated and cannot interfere with each other. 
@@ -261,6 +227,42 @@ To simulate this effect many snapshots of the output field are taken each time u
 which is equal to $\tau=6.6\times10^{-17} s$. 
  Therefore each snapshot is assumed to be taken at the image plane at an interval of $\tau$. 
  All the snapshots are then added together, integrating the optical disturbance over time. Longer integration times will give better contrast and less noise while approaching to the incoherent imaging as it is shown in the following paragraph.
+ \section{Optimization of Coherence Parameters}
+ In this section simulation will be presented in order to estimate the best values of the simulation parameters to produce partially coherent light. These parameters are the coherence coefficient $C$ for spatial coherence and the number of snapshots for the temporal coherence. A resolution target was imaged by a 2f system described in section \ref{sec:system}.
+ \subsection{Optimization of Spatial Coherence}
+ Simulations have been run propagating an optical disturbance with phase masks generated with different values of the parameter \textit{C} with the purpose of defining the optimal number of sources to generate a phase mask that produces a final images with a high signal to noise ratio.
+ The input field used is the USAF resolution target, shown in figure \ref{fig:USAF}
+ \begin{figure}[H]
+ 	\begin{center}
+ 		\begin{tabular}{c}
+ 			\includegraphics[height=3cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/USAF.eps}
+ 		\end{tabular}
+ 	\end{center}
+ 	\caption{ \label{fig:USAF} 
+ 		USAF resolution target. }
+ \end{figure} 
+ The first simulation has been made changing the coherence index $C$ from a value of 5 (high coherence) to 500 (low coherence) in a sampling window with a resolution of 1765 by 1765 pixels.
+ Figure \ref{fig:spatialsnr2} shows how the field at the image plane for different values of \textit{C} appears, while figure \ref{fig:spatialsnr1} shows a plot of the signal to noise ratio of the images as a function of the coherence index showing an asymptotic behaviour. After a certain threshold value of $C$, increasing the coherence index does not improve the image quality. The threshold is defined as the value of $C$ for which the variance of the previous five values of SNR is less than 0.01.
+ Figure \ref{fig:spatialsnr1} shows that for values of $C$ bigger than 250 the SNR asymptotically tends to 18 dB. In this case the resolution of the input field, and therefore of the phase mask, is 1765 by 1765 pixels, so that the SNR reaches the asymptote when the ratio between the number of sources and the resolution is 0.14. After this point, there is no gain in making the light source more incoherent in terms of signal to noise ratio improvement.
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=.4\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/iota.eps}
+ 	\caption{\label{fig:spatialsnr2}Images of the USAF resolution target with different values of $\iota$. Increasing the number of point sources generating the phase mask leads to more incoherent imaging, leading to improved resolution. Images where obtained with 300 iterations.}
+ \end{figure}
+ The ratio between the number of sources \textit{C} and the resolution of the optical field \textit{N} is defined as the incoherence degree $\iota$:
+ \begin{equation}
+ \label{eq:incoherence_degree}
+ \iota = \dfrac{C}{N}
+ \end{equation}
+ \newpage
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/SNRspatial.eps}
+ 	\caption{\label{fig:spatialsnr1}Signal to noise ratio of the image of a USAF resolution target plotted as a function of the coherence index $C$.}
+ \end{figure}
+ The image quality evaluated using the signal to noise ratio improves with the increasing of the sources used to generate the phase mask. However it reaches an asymptote after 250 sources. This is due to the fact that the interference effects due to low coherence decrease, improving image quality. 
+ \newpage
  \subsection{Optimization of Temporal Coherence}
 The second simulation run aimed to define the optimum number of snapshots in order to remove temporal coherence effects. The random phase mask acts as a diffuser, and the resultant output field obtained by a single snapshot will present a low signal to noise ratio due to speckles, as shown in figure \ref{fig:speckle}
 \begin{figure}[H]
@@ -278,7 +280,7 @@ Taking several snapshots and adding them all together is equal to an integration
  \begin{figure}[H]
  	\centering
  	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/SNRtemporal.eps}
- 	\caption{\label{fig:SNRiter}Signal to noise ratio as a function of the number of iterations. The threshold has been calculated looking at the variance of the previous five data.}
+ 	\caption{\label{fig:SNRiter}Signal to noise ratio as a function of the number of iterations. The threshold has been calculated looking at the variance of the previous five data. The purpose of the fitted curve is to show the asymptotic behaviour of the data.}
  \end{figure}
  For an image with an incoherence degree of $\iota=0.14$ the number of iterations after which the SNR of the image does not improve further is 350. After that value the SNR tends asymptotically to 18 dB in spite of an increased computational effort. Therefore from a SNR point of view the optimal number of iteration to simulate temporal incoherence is 350. All the other simulations presented in this work will be performed with the coherence parameters discussed in this section. 
 \subsection{Coherent Imaging vs Incoherent Imaging}
@@ -292,7 +294,8 @@ The image of an edge has been simulated to make a comparison between the coheren
 	\caption{\label{fig:coherenceprofile}Comparison between the coherent and an incoherent response of a simple 2f system to a sharp edge.}
 \end{figure}
 \section{Conclusions}
-In this  chapter it was shown how the methods described in chapter \ref{chap:fresnel} can be implemented in the simulation toolbox. The performance of the different free space propagation methods evaluated using the results from the simulations were presented. 
+In this  chapter it was shown how the methods described in chapter \ref{chap:fresnel} can be implemented by the simulation toolbox. A comparison between the different free space propagation methods described in chapter \ref{chap:fresnel} was presented in section \ref{sec:perfAS} showing how the corrected band limited angular spectrum method is the most suitable to simulate an imaging system since presents the best trade-off between computational performance, Signal to Noise ration and accuracy of the output field. This has been proven further in section \ref{sec:comp} where the image of a point source obtained with the four different method has been analysed both in the spatial and frequency domain. \\
+The last two sections of this chapter discuss coherence and present an original method to simulate partially coherent light sources. The method is described in details and an estimation of the best simulation parameters is presented. The correctness of the results is proven through the simulation of an infinite edge presented in section \ref{sec:coherencevsinco}. 
 \nomenclature{$\overrightarrow{E}$}{Electric field}
 \nomenclature{$\overrightarrow{H}$}{Magnetic field}
 \nomenclature{$\epsilon$}{Electrical permittivity}
