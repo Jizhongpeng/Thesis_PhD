@@ -394,7 +394,7 @@ H(f_x,f_y;z)=\begin{cases}e^{j \frac{2\pi z}{\lambda}\sqrt{1-(\lambda f_x)^2-(\l
  \begin{figure}[H]
  	\begin{center}
  		\begin{tabular}{c}
- 			\includegraphics[height=16cm]{phaseH01.eps}
+ 			\includegraphics[height=16cm]{phaseH01new.eps}
  		\end{tabular}
  	\end{center}
  	\caption 	{ \label{fig:AStransfer} 
@@ -415,7 +415,7 @@ H(f_x,f_y;z)=\begin{cases}e^{j \frac{2\pi z}{\lambda}\sqrt{1-(\lambda f_x)^2-(\l
  \\
  \nu_y=-\dfrac{z}{\lambda}\dfrac{\lambda^2 f_y}{\sqrt{1-(\lambda f_y)^2}}\\ \end{cases}
  \end{equation}
- As stated by Matsushima and Shimobaba \cite{matsushima2009band}, if the input optical disturbance is sampled by an $N \times N$ sampling window with pixel size $dx$, the transfer function is sampled by units of spatial frequency equal to $df=1/(N dx)$. To satisfy the Nyquist condition the sampling frequency should be at least the double of the bandwidth of the transfer function. For one direction in the local frequency space:
+ As stated by Matsushima and Shimobaba \cite{matsushima2009band}, if the input optical disturbance is sampled by an $N \times N$ sampling window with pixel size $dx$, the transfer function is sampled by units of spatial frequency equal to $df=1/(N dx)$. It is not a differential but a range of sampling units. To satisfy the Nyquist condition the sampling frequency should be at least the double of the bandwidth of the transfer function. For one direction in the local frequency space:
  \begin{equation}
  \label{eq:BL4}
  \dfrac{1}{df}\geq 2|\nu_x|
@@ -454,11 +454,12 @@ H(f_x,f_y;z)=\begin{cases}e^{j \frac{2\pi z}{\lambda}\sqrt{1-(\lambda f_x)^2-(\l
  \label{eq:BL11}
  H'(f_x,f_y;z)=H(f_x,f_y;z)rect\left(\dfrac{f_x}{f_{max}}\right)rect\left(\dfrac{f_y}{f_{max}}\right)
  \end{equation}
+ where $rect$ is the rectangular function or normalized boxcar function.
  The MATLAB algorithm to implement the band limitation consists in multiplying the phase term of the propagation transfer function by a phase mask with the shape of a circle function of radius $f_{max}$ in the plane of the spatial frequencies. A circular phase mask has been chosen instead of the rectangular phase mask of equation \ref{eq:BL11} because it follows the geometry of the lens aperture, without introducing new spatial features that could effect the diffraction.\\ The resultant phase of the transfer function is shown in figure \ref{fig:bandlimitedH}, with the bandwidth for three different propagation distances.
  \begin{figure}[H]
  	\begin{center}
  		\begin{tabular}{c}
- 				\includegraphics[height=15cm]{phaseHBL.eps}
+ 				\includegraphics[height=15cm]{phaseHBLnew.eps}
  		\end{tabular}
  	\end{center}
  	\caption { \label{fig:bandlimitedH} 
@@ -597,7 +598,7 @@ Where the three components of the thickness are:
 \\
 \begin{equation}
 \label{eq:delta3}
-\Delta_3(x,y)=\Delta_{03}(x,y)-R_2\bigg(1-\sqrt{1-\frac{x^2+y^2}{R_2^2}}\bigg)
+\Delta_3(x,y)=\Delta_{03}(x,y)+R_2\bigg(1-\sqrt{1-\frac{x^2+y^2}{R_2^2}}\bigg)
 \end{equation}
 \\
 
@@ -684,7 +685,7 @@ and substituting \ref{eq:approx3} into equation \ref{eq:phase} the result is the
 	\begin{figure}[H]
 		\begin{center}
 			\begin{tabular}{c}
-					\includegraphics[height=7cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/figures/figurephase.png}
+					\includegraphics[height=7cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/phaselens.eps}
 			\end{tabular}
 		\end{center}
 		\caption{ \label{fig:argument} 

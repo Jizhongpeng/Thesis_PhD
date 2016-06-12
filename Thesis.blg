@@ -8,7 +8,8 @@ A level-1 auxiliary file: ./TeX_files/chapter03.aux
 A level-1 auxiliary file: ./TeX_files/chapter04.aux
 A level-1 auxiliary file: ./TeX_files/chapter05.aux
 A level-1 auxiliary file: ./TeX_files/chapter07.aux
-A level-1 auxiliary file: (./TeX_files/appendix_A).aux
+A level-1 auxiliary file: ./TeX_files/appendix_fresnel.aux
+A level-1 auxiliary file: ./TeX_files/appendix_codeexample.aux
 The style file: plain.bst
 Database file #1: bibliography.bib
 Repeated entry---line 159 of file bibliography.bib
@@ -29,6 +30,8 @@ Repeated entry---line 550 of file bibliography.bib
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in adelson1992single
 Warning--empty journal in hansen2011depth
+Warning--empty journal in barb1997novel
+Warning--empty year in barb1997novel
 Warning--empty journal in kerr2007derivation
 Warning--there's a number but no volume in nayar2006computational
 Warning--can't use both volume and number fields in wetzstein2011computational

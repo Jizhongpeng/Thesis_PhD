@@ -1,76 +1,76 @@
-\contentsline {chapter}{Introduction}{33}
-\contentsline {chapter}{\numberline {1}Theory and Methods of Plenoptic Imaging}{41}
-\contentsline {section}{\numberline {1.1}Introduction}{41}
-\contentsline {section}{\numberline {1.2}Plenoptic Function and the Light Field}{43}
-\contentsline {section}{\numberline {1.3}Plenoptic Camera}{46}
-\contentsline {section}{\numberline {1.4}Plenoptic Camera 1.0}{48}
-\contentsline {subsection}{\numberline {1.4.1}Phase Space in Plenoptic 1.0}{54}
-\contentsline {subsection}{\numberline {1.4.2}Light Field Parameterization}{56}
-\contentsline {section}{\numberline {1.5}Plenoptic 1.0 Rendering}{61}
-\contentsline {section}{\numberline {1.6}Plenoptic Camera 2.0}{64}
-\contentsline {section}{\numberline {1.7}Plenoptic Camera 2.0: a Geometrical Optics Analysis}{72}
-\contentsline {section}{\numberline {1.8}Plenoptic 2.0 Rendering}{76}
-\contentsline {section}{\numberline {1.9}Conclusions}{77}
-\contentsline {chapter}{\numberline {2}Fresnel Simulation Toolbox: Theoretical Prerequisites}{79}
-\contentsline {section}{\numberline {2.1}Introduction}{79}
-\contentsline {section}{\numberline {2.2}Scalar Theory of Diffraction}{81}
-\contentsline {subsection}{\numberline {2.2.1}Helmholtz Equation}{84}
-\contentsline {subsection}{\numberline {2.2.2}Solutions of Helmholtz Equations}{85}
-\contentsline {subsection}{\numberline {2.2.3}The Fresnel Approximation}{87}
-\contentsline {section}{\numberline {2.3}Free Space Propagation Operator: Fresnel Approximation Approach}{88}
-\contentsline {subsection}{\numberline {2.3.1}Multi-Step Fresnel Propagation Operator}{89}
-\contentsline {section}{\numberline {2.4}Free Space Propagation Operator: Angular Spectrum of Plane Waves Approach}{92}
-\contentsline {subsection}{\numberline {2.4.1}Angular Spectrum of Plane Waves}{92}
-\contentsline {subsection}{\numberline {2.4.2}Band Limited Angular Spectrum}{96}
-\contentsline {subsection}{\numberline {2.4.3}Corrected Band Limited Angular Spectrum Method}{102}
-\contentsline {section}{\numberline {2.5}Thin Lens Operator}{104}
-\contentsline {subsection}{\numberline {2.5.1}Aliasing in Phase Sampling}{109}
-\contentsline {section}{\numberline {2.6}Conclusions}{112}
-\contentsline {chapter}{\numberline {3}Fresnel Simulation Toolbox: applications}{115}
-\contentsline {section}{\numberline {3.1}Introduction}{115}
-\contentsline {section}{\numberline {3.2}Performances of the Angular Spectrum Methods}{116}
-\contentsline {section}{\numberline {3.3}Comparison between the Free Space Propagation Operators}{120}
-\contentsline {subsection}{\numberline {3.3.1}Description of the System}{120}
-\contentsline {subsection}{\numberline {3.3.2}Image of a Point Source}{121}
-\contentsline {section}{\numberline {3.4}Coherence}{126}
-\contentsline {subsection}{\numberline {3.4.1}Temporal Coherence}{127}
-\contentsline {subsection}{\numberline {3.4.2}Spatial Coherence}{127}
-\contentsline {subsection}{\numberline {3.4.3}Simulation of Spatial Coherence}{129}
-\contentsline {subsection}{\numberline {3.4.4}Simulation of Temporal Coherence}{135}
-\contentsline {section}{\numberline {3.5}Optimization of Coherence Parameters}{136}
-\contentsline {subsection}{\numberline {3.5.1}Optimization of Spatial Coherence}{136}
-\contentsline {subsection}{\numberline {3.5.2}Optimization of Temporal Coherence}{140}
-\contentsline {subsection}{\numberline {3.5.3}Coherent Imaging vs Incoherent Imaging}{143}
-\contentsline {section}{\numberline {3.6}Conclusions}{144}
-\contentsline {chapter}{\numberline {4}Simulations of a Plenoptic 1.0 System}{147}
-\contentsline {section}{\numberline {4.1}Introduction}{147}
-\contentsline {section}{\numberline {4.2}Description of the System}{148}
-\contentsline {subsection}{\numberline {4.2.1}Diffraction Effects on the System}{150}
-\contentsline {section}{\numberline {4.3}Advanced Rendering Techniques}{153}
-\contentsline {subsection}{\numberline {4.3.1}Changing Aperture}{153}
-\contentsline {subsection}{\numberline {4.3.2}Changing the Point of View}{157}
-\contentsline {section}{\numberline {4.4}Depth Estimation}{157}
-\contentsline {section}{\numberline {4.5}Synthetic Refocus}{163}
-\contentsline {subsection}{\numberline {4.5.1}Synthetic Refocus Algorithm}{165}
-\contentsline {subsection}{\numberline {4.5.2}Refocusing Operator}{168}
-\contentsline {section}{\numberline {4.6}Results of the Simulations}{170}
-\contentsline {section}{\numberline {4.7}Focal Stack Depth Estimation}{176}
-\contentsline {section}{\numberline {4.8}Conclusions}{181}
-\contentsline {chapter}{\numberline {5}Simulation of a Plenoptic 2.0 System}{183}
-\contentsline {section}{\numberline {5.1}Rendering in Plenoptic 2.0}{184}
-\contentsline {subsection}{\numberline {5.1.1}Extracting Sub Images}{186}
-\contentsline {subsection}{\numberline {5.1.2}Basic Rendering}{187}
-\contentsline {subsection}{\numberline {5.1.3}Depth Based Rendering}{189}
-\contentsline {section}{\numberline {5.2}Description of the system}{192}
-\contentsline {section}{\numberline {5.3}Optical Performances of a Focused Plenoptic System}{196}
-\contentsline {section}{\numberline {5.4}Impulse Response of a Focused Plenoptic system}{201}
-\contentsline {section}{\numberline {5.5}Two Point Resolution}{206}
-\contentsline {section}{\numberline {5.6}Frequency Analysis of a Focused Plenoptic System}{209}
-\contentsline {section}{\numberline {5.7}Conclusions}{223}
-\contentsline {chapter}{\numberline {6}Light Field Microscope}{225}
-\contentsline {section}{\numberline {6.1}From Simulation to Reality}{225}
-\contentsline {section}{\numberline {6.2}Description of the System}{227}
-\contentsline {section}{\numberline {6.3}Image Acquisition Protocol}{234}
-\contentsline {section}{\numberline {6.4}Rendering of experimental data}{240}
-\contentsline {section}{\numberline {6.5}Future Work}{243}
-\contentsline {chapter}{\numberline {7}Conclusions and Future work}{247}
+\contentsline {chapter}{Introduction}{35}
+\contentsline {chapter}{\numberline {1}Theory and Methods of Plenoptic Imaging}{43}
+\contentsline {section}{\numberline {1.1}Introduction}{43}
+\contentsline {section}{\numberline {1.2}Plenoptic Function and the Light Field}{45}
+\contentsline {section}{\numberline {1.3}Plenoptic Camera}{48}
+\contentsline {section}{\numberline {1.4}Plenoptic Camera 1.0}{50}
+\contentsline {subsection}{\numberline {1.4.1}Phase Space in Plenoptic 1.0}{56}
+\contentsline {subsection}{\numberline {1.4.2}Light Field Parameterization}{58}
+\contentsline {section}{\numberline {1.5}Plenoptic 1.0 Rendering}{63}
+\contentsline {section}{\numberline {1.6}Plenoptic Camera 2.0}{66}
+\contentsline {section}{\numberline {1.7}Plenoptic Camera 2.0: a Geometrical Optics Analysis}{74}
+\contentsline {section}{\numberline {1.8}Plenoptic 2.0 Rendering}{78}
+\contentsline {section}{\numberline {1.9}Conclusions}{79}
+\contentsline {chapter}{\numberline {2}Fresnel Simulation Toolbox: Theoretical Prerequisites}{81}
+\contentsline {section}{\numberline {2.1}Introduction}{81}
+\contentsline {section}{\numberline {2.2}Scalar Theory of Diffraction}{83}
+\contentsline {subsection}{\numberline {2.2.1}Helmholtz Equation}{86}
+\contentsline {subsection}{\numberline {2.2.2}Solutions of Helmholtz Equations}{87}
+\contentsline {subsection}{\numberline {2.2.3}The Fresnel Approximation}{89}
+\contentsline {section}{\numberline {2.3}Free Space Propagation Operator: Fresnel Approximation Approach}{90}
+\contentsline {subsection}{\numberline {2.3.1}Multi-Step Fresnel Propagation Operator}{91}
+\contentsline {section}{\numberline {2.4}Free Space Propagation Operator: Angular Spectrum of Plane Waves Approach}{94}
+\contentsline {subsection}{\numberline {2.4.1}Angular Spectrum of Plane Waves}{94}
+\contentsline {subsection}{\numberline {2.4.2}Band Limited Angular Spectrum}{98}
+\contentsline {subsection}{\numberline {2.4.3}Corrected Band Limited Angular Spectrum Method}{104}
+\contentsline {section}{\numberline {2.5}Thin Lens Operator}{106}
+\contentsline {subsection}{\numberline {2.5.1}Aliasing in Phase Sampling}{111}
+\contentsline {section}{\numberline {2.6}Conclusions}{114}
+\contentsline {chapter}{\numberline {3}Fresnel Simulation Toolbox: applications}{117}
+\contentsline {section}{\numberline {3.1}Introduction}{117}
+\contentsline {section}{\numberline {3.2}Performances of the Angular Spectrum Methods}{118}
+\contentsline {section}{\numberline {3.3}Comparison between the Free Space Propagation Operators}{122}
+\contentsline {subsection}{\numberline {3.3.1}Description of the System}{122}
+\contentsline {subsection}{\numberline {3.3.2}Image of a Point Source}{123}
+\contentsline {section}{\numberline {3.4}Coherence}{128}
+\contentsline {subsection}{\numberline {3.4.1}Temporal Coherence}{129}
+\contentsline {subsection}{\numberline {3.4.2}Spatial Coherence}{129}
+\contentsline {subsection}{\numberline {3.4.3}Simulation of Spatial Coherence}{131}
+\contentsline {subsection}{\numberline {3.4.4}Simulation of Temporal Coherence}{137}
+\contentsline {section}{\numberline {3.5}Optimization of Coherence Parameters}{138}
+\contentsline {subsection}{\numberline {3.5.1}Optimization of Spatial Coherence}{138}
+\contentsline {subsection}{\numberline {3.5.2}Optimization of Temporal Coherence}{142}
+\contentsline {subsection}{\numberline {3.5.3}Coherent Imaging vs Incoherent Imaging}{145}
+\contentsline {section}{\numberline {3.6}Conclusions}{146}
+\contentsline {chapter}{\numberline {4}Simulations of a Plenoptic 1.0 System}{149}
+\contentsline {section}{\numberline {4.1}Introduction}{149}
+\contentsline {section}{\numberline {4.2}Description of the System}{150}
+\contentsline {subsection}{\numberline {4.2.1}Diffraction Effects on the System}{152}
+\contentsline {section}{\numberline {4.3}Advanced Rendering Techniques}{155}
+\contentsline {subsection}{\numberline {4.3.1}Changing Aperture}{155}
+\contentsline {subsection}{\numberline {4.3.2}Changing the Point of View}{159}
+\contentsline {section}{\numberline {4.4}Depth Estimation}{159}
+\contentsline {section}{\numberline {4.5}Synthetic Refocus}{165}
+\contentsline {subsection}{\numberline {4.5.1}Synthetic Refocus Algorithm}{167}
+\contentsline {subsection}{\numberline {4.5.2}Refocusing Operator}{170}
+\contentsline {section}{\numberline {4.6}Results of the Simulations}{172}
+\contentsline {section}{\numberline {4.7}Focal Stack Depth Estimation}{178}
+\contentsline {section}{\numberline {4.8}Conclusions}{183}
+\contentsline {chapter}{\numberline {5}Simulation of a Plenoptic 2.0 System}{185}
+\contentsline {section}{\numberline {5.1}Rendering in Plenoptic 2.0}{186}
+\contentsline {subsection}{\numberline {5.1.1}Extracting Sub Images}{188}
+\contentsline {subsection}{\numberline {5.1.2}Basic Rendering}{189}
+\contentsline {subsection}{\numberline {5.1.3}Depth Based Rendering}{191}
+\contentsline {section}{\numberline {5.2}Description of the system}{194}
+\contentsline {section}{\numberline {5.3}Optical Performances of a Focused Plenoptic System}{198}
+\contentsline {section}{\numberline {5.4}Impulse Response of a Focused Plenoptic system}{203}
+\contentsline {section}{\numberline {5.5}Two Point Resolution}{208}
+\contentsline {section}{\numberline {5.6}Frequency Analysis of a Focused Plenoptic System}{211}
+\contentsline {section}{\numberline {5.7}Conclusions}{225}
+\contentsline {chapter}{\numberline {6}Light Field Microscope}{227}
+\contentsline {section}{\numberline {6.1}From Simulation to Reality}{227}
+\contentsline {section}{\numberline {6.2}Description of the System}{229}
+\contentsline {section}{\numberline {6.3}Image Acquisition Protocol}{236}
+\contentsline {section}{\numberline {6.4}Rendering of experimental data}{242}
+\contentsline {section}{\numberline {6.5}Future Work}{245}
+\contentsline {chapter}{\numberline {7}Conclusions and Future work}{249}

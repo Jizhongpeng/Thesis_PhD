@@ -4,21 +4,33 @@
 \section{Introduction}
 This chapter will describes in details the performance of the different free space propagation operators described in the previous chapter. Some examples of how they can be used to simulate of an optical system will also be presented and some example of the Matlab code used to run the simulations will be presented. Particular attention will be given to the differences between the different operators in terms of signal to noise ratio.
 It will also be largely described how to simulate partially coherent light. An original method to simulate both spatial and temporal coherence will be presented. Results form the numerical simulations will also be presented to support the theoretical model and to optimise the parameters.
+In future developments of this work could be interesting to evaluate the performances of these methods analytically. But for the nature of this work is it enough to evaluate those performances using the simulations.
 \section{Performances of the Angular Spectrum Methods}
  \label{sec:perfAS}
  To evaluate the differences in resolution of the three variants of the angular spectrum methods, normal Angular spectrum (AS), Band Limited Angular Spectrum (BL), and Corrected Band Limited Angular Spectrum (CBL) presented in chapter \ref{chap:fresnel}, a simulation has been implemented consisting of a free space propagation of a constant input field with a circular pupil of diameter 5 mm, sampled with a resolution of 3000 $\times$ 3000 pixels with a sampling window of 1 cm. The propagation distances \textit{z} varied from 1 m to 10 m. The wavelength used was of 633 nm, corresponding to the red Helium-Neon Laser. Performances have been evaluated experimentally through the simulations.\\ 
+ The setup simulated is shown in figure \ref{fig:setup111}.
+  \begin{figure}[h]
+  	\begin{center}
+  		\begin{tabular}{c}
+  			\includegraphics[height=6cm]{perf1.eps}
+  		\end{tabular}
+  	\end{center}
+  	 	\caption	{ \label{fig:setup111} 
+  	 		Positions of the plane where the optical field has been sampled with respect to the aperture. }
+  	 \end{figure} 
  Results are shown in figure \ref{fig:methods} where the cross section of the diffraction patterns are shown. 
  The BL method shown in the central column gives smooth diffraction patterns. Increasing the propagation distance however leads to the intensity profile losing part of the information because of the excessive low pass filtering on the propagation transfer function, leading the complete loss of the diffraction fringes. A comparison with the AS can be seen in figure \ref{fig:methods}, where the diffraction fringes are presents with the superimposition of the noise due to aliasing in the transfer function sampling. This affects the resolution of the diffraction pattern and the signal to noise ratio (SNR) drops with \textit{z} as shown in figure \ref{fig:SNR1}.The CBL method gives a good noise reduction without losing the original signal shape as explained in section \ref{sec:angular3} and as it is shown in figure \ref{fig:methods} on the far right column. Fringes are clearly present in the diffraction pattern even for large propagation distances and the noise is removed. \\
  In figure figure \ref{fig:SNR1} the SNR of the diffraction patterns in figure \ref{fig:methods} is plotted as a function of the propagation distance for the three examined cases. The BL method gives a better SNR especially for short propagation distances, where the bandwidth of the transfer function is not low pass filtering the signal yet, but only avoiding the aliasing. Its values remains in general above the SNR of the CBL method (almost 15dB), even in the case of large propagation distances. This is due to the excessive smoothing action that leads to the loss of resolution. On the other hand without any bandwidth limitation, AS, green line, the aliasing generated noise becomes dominant for long propagation distances and the SNR approaches the 0 dB value. The best results in terms of resolution and noise reduction are given by the corrected BL method where the information on the diffraction is retained entirely.
- \begin{figure}[h]
+ \begin{figure}[H]
  	\begin{center}
  		\begin{tabular}{c}
  			\includegraphics[height=12cm]{SNR_com.eps}
  		\end{tabular}
  	\end{center}
  	\caption	{ \label{fig:SNR1} 
- 		Comparison between the Signal to Noise ratio (SNR) as a function of the propagation distance for the three propagation methods seen in section \ref{sec:angular 2}. The BL and the corrected BL methods improve the SNR, that instead drops as the propagation distance increases when the AS method is used. }
- \end{figure} 
+ 		Sampling of the  Signal to Noise ratio (SNR) at various values of the propagation distances for the three propagation methods seen in section \ref{sec:angular 2}. The lines are just joining the sampled points and does not represent a model. The BL and the corrected BL methods improve the SNR, that instead drops as the propagation distance increases when the AS method is used. }
+ \end{figure}
+e 
  \begin{figure}[H]
  	\begin{center}
  		\begin{tabular}{c}
@@ -47,14 +59,14 @@ It will also be largely described how to simulate partially coherent light. An o
 	 		\end{tabular}
 	 	\end{center}
 	 	\caption{ \label{fig:2f} 
-	 		Schematic of the 2f system simulated. f is the focal lenght, z the propagation distances, D is the aperture of the lens, w the field of view and N the sampling resolution. }
+	 		Schematic of the 2f system simulated. f is the focal length, z the propagation distances, D is the aperture of the lens, w the field of view and N the sampling resolution. }
 	 \end{figure} 
 	 The optical cut-off frequency of this system is given by the relation \cite{goodman2005introduction}:
 	 \begin{equation}
 	 \label{eq:cutoff}
-	 \nu_c=\dfrac{1}{\lambda F_{\#}}
+	 \nu_{co}=\dfrac{1}{\lambda F_{\#}}
 	 \end{equation} 
-	 The object was illuminated with monochromatic light of wavelength $\lambda=633nm$, $\nu_c=2.5\cdot10^4 cycles/m$.
+	 The object was illuminated with monochromatic light of wavelength $\lambda=633nm$, therefore the cut-off frequency was $\nu_{co}=2.5\cdot10^4 cycles/m$.
 	 \subsection{Image of a Point Source}
 	 The first experiment simulated is the image of a point source, realized with a pinhole of $10 \mu m$ of diameter placed at the object plane indicated in figure \ref{fig:2f}. The image has been taken using four different methods to propagate the light into the system. Those are:
 	 \begin{itemize}
@@ -95,6 +107,7 @@ The impulse response for a point source as input will be computed using each of 
 	 \end{equation}
 	 where $D$ is the aperture of the lens. According to the values in section \ref{sec:system} the Airy disk should have a its first minimum at $x_{min}=67 \mu m$.
 	 Without considering the MSF case that is too noisy and does not present zeros, the position of the first minimum is the other cases are:\\
+	 \begin {table}
 	 \begin{center}
 	 \begin{tabular}{ l | r }
 	 	
@@ -105,7 +118,8 @@ The impulse response for a point source as input will be computed using each of 
 	 	\hline 
 	 		\end{tabular}
 	\end{center}
-	As expected for both the band limited angular spectrum methods (BL and CBL) the Airy Disk is slightly wider due to the low pass filtering action that transfer function has undergone. However noise is reduced with the band limitation as shown in figure
+\end{table}
+	As expected for both the band limited angular spectrum methods (BL and CBL) the Airy Disk is slightly wider due to the low pass filtering action that transfer function has undergone. However from a qualitative analysis noise is reduced with the band limitation as shown in figure
 	 \ref{fig:resultspoint11}.
 	 To better understand how the resolution changes with the different methods, it is worth to have a look at the Fourier transform of the images shown in figure \ref{fig:resultspoint11}. The Fourier transform of the impulse response of a system give its frequency response. The shape of the frequency response gives information about how the frequency components of the input signal are modulated and transferred to the output signal. When this function goes to zero the correspondent frequency value is called the cutoff frequency. For frequencies higher than the cutoff frequency, all the information included in the input signal is lost. Results are shown in figure \ref{fig:resultspoint2}. The graphs are symmetric with respect to the zero frequency, therefore only the positive frequencies are shown.
 	 
@@ -130,7 +144,7 @@ Coherence is a statistical property of light and is described in terms of second
 The empirical method developed to simulate light propagating at low coherence includes both spatial and temporal coherence. 
 \subsection{Temporal Coherence}
 \label{sec:temp}
-Following the explanation of Goodman \cite{goodman2015statistical}, given a complex disturbance $U(\overrightarrow{X},t)$ with a finite bandwidth $\Delta\nu $, it is expected to remain constant during a time interval $\tau<1/\Delta\nu$. This means that the disturbance taken at two different times in the same spatial position $U(\overrightarrow{X},t)$ and $U(\overrightarrow{X},t+\tau)$ are highly correlated if $\tau<\tau_c$ where $\tau_c$ is the coherence time. 
+Following the explanation of Goodman \cite{goodman2015statistical}, given a complex disturbance $U(\overrightarrow{X},t)$ with a finite bandwidth $\Delta\nu $, it is expected to remain constant during a time interval $\tau<1/\Delta\nu$. This means that the disturbance taken at two different times in the same spatial position $U(\overrightarrow{X},t)$ and $U(\overrightarrow{X},t+\tau)$ are highly correlated if $\tau<\tau_c$ where $\tau_c$ is the coherence time. Under this condition $\tau_c=1/\Delta\nu$.
 Since the correlation takes place without any spatial shift it is possible to drop the spatial coordinates $\overrightarrow{X}$. The degree of temporal coherence is therefore given by the autocorrelation function:
 \begin{equation}
 \label{eq:coherence1}
