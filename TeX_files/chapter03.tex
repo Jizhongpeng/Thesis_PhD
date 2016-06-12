@@ -86,6 +86,7 @@ Figure \ref{fig:rawstanford1} shows the raw image of thin silky skin separating 
 	\includegraphics[width=0.9\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/stanfordfull.eps}
 	\caption{\label{fig:stanford1}Rendered Images from the raw data in figure \ref{fig:rawstanford1}. On the left there is the full aperture image obtained integrating along all the directional coordinates, while on the right there is the all in focus image obtained taking only the central pixel of the each sub image, that corresponds to rays with the direction parallel to the optical axis.}
 \end{figure}
+Reducing the number of pixel used to form the final image reduces of course the SNR of the image making it more noisy.
  \subsection{Changing the Point of View}
 It is possible to change the point of view in the rendered image integrating along all the directional coordinates in one direction keeping fixed the other direction. For example an image corresponding to a particular point of view can be obtained, with reference to equations \ref{eq:rendering5}, keeping fixed the directional coordinate corresponding to the desired point of view and integrating along all the other coordinates. 
  \begin{equation}
@@ -160,7 +161,7 @@ This method is based on the fact that for a plane out of focus for the real came
  \begin{figure}[H]
  	\centering
  	\includegraphics[width=.8\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/refocus2.eps}
- 	\caption{\label{fig:synthetic3} Changing the focal plane of the camera is equal to reparametrizing the light field according to the new coordinates. The reparametrization corresponds to a scaling of the ratio between the refocused plane and the original camera plane $ \alpha'$. }
+ 	\caption{\label{fig:synthetic3} Changing the focal plane of the camera is equal to re-parametrizing the light field according to the new coordinates. The re-parametrization corresponds to a scaling of the ratio between the refocused plane and the original camera plane $ \alpha'$. }
  \end{figure}
  Looking at figure \ref{fig:synthetic3} a ray of light that crosses the main lens plane at the coordinate $u$ and that then intercepts the synthetic image plane at the point $x'_1$, can be represented with the coordinates of the original image plane $x_1$. Because of similar triangles, the value of the \textit{x} coordinate on the image plane can be expressed as a function of the coordinates $ u, x'$:
  \begin{equation}
@@ -238,7 +239,7 @@ The first object to be imaged was a volume V of dimension 20 mm $\times$ 20 mm $
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/planes.eps}
-	\caption{\label{fig:volumepoint} Position of the point sources imaged inside the volume V simulated. }
+	\caption{\label{fig:volumepoint} Position of the point sources imaged inside the volume V simulated. The planes B and A are the boundaries of the volume considered. }
 \end{figure}
 Each plane has been imaged independently setting the distance $z_1$ equal to the sum of the distance of the main lens focal plane and the defocus $\delta z$. The Coordinates of the points are: 
 \begin{itemize}
@@ -291,10 +292,11 @@ The synthetic refocus algorithm provides a method to estimate the depth of a poi
 	\caption{\label{fig:spec1} Spectrum of out of focus image (blue) and spectrum of the refocused image (red). }
 \end{figure}
 The action of shearing the light field produces a redistribution of the power spectrum of the signal towards high frequencies. \\
- This effect can be used to estimate the depth of the object imaged by evaluating its level of blur. This blur based depth estimation is an original contribution of this work to light field literature. The method consists in creating a focal stack by shearing the light field at different values of the coefficient $ \alpha'$, that correspond to different focal planes, and rendering the images. After the focal stack is created the power spectrum of each image is calculated using the fast Fourier transform algorithm. The low frequency terms are then removed by high pass filtering the images and the total energy contained in the high frequency term is calculated by integrating the Fourier spectra. The bandwidth of the high pass filter has been calculated in order to remove the central lobe of the spectrum. Plotting the values of energy as a function of the different $ \alpha'$ coefficients a curve with a maximum in the proximity of the most in focus image is obtained. This maximum corresponds to the image in the focal stack that best estimates the actual value of $ \alpha'$. Figure \ref{fig:maxima} shows the energy as a function of the refocus parameter $ \alpha'$ for a point source placed at different depths. The vertical red line indicates the position of the maximum. The values of the estimated $ \alpha'$ and the real one are shown in the following table:
- \\
- \\
+ This effect can be used to estimate the depth of the object imaged by evaluating its level of blur. This blur based depth estimation is an original contribution of this work to light field literature. The method consists in creating a focal stack by shearing the light field at different values of the coefficient $ \alpha'$, that correspond to different focal planes, and rendering the images. After the focal stack is created the power spectrum of each image is calculated using the fast Fourier transform algorithm. The low frequency terms are then removed by high pass filtering the images and the total energy contained in the high frequency term is calculated by integrating the Fourier spectra. The bandwidth of the high pass filter has been calculated in order to remove the central lobe of the spectrum. Plotting the values of energy as a function of the different $ \alpha'$ coefficients a curve with a maximum in the proximity of the most in focus image is obtained. This maximum corresponds to the image in the focal stack that best estimates the actual value of $ \alpha'$. Figure \ref{fig:maxima} shows the energy as a function of the refocus parameter $ \alpha'$ for a point source placed at different depths. The vertical red line indicates the position of the maximum. The values of the estimated $ \alpha'$ and the real one are shown in table \ref{tab:alphaest}.
+
  \begin{table}
+ 	\label{tab:alphaest}
+ 	\begin{center}
   \begin{tabular}{l|c|c|r}
   	\hline
   	Estimated $ \alpha'$ & Real $ \alpha'$ & Error & Defocus \\ \hline
@@ -304,6 +306,7 @@ The action of shearing the light field produces a redistribution of the power sp
   	1.105 & 1.1724 & 0.0674 & +0.05 m\\ \hline
   	\label{tab:2}
   \end{tabular}
+\end{center}
   \caption{Comparison between the estimated and the real values of the refocusing factor $ \alpha$ }
  \end{table}
 
@@ -327,7 +330,7 @@ Figure \ref{fig:error} shows the distribution of the estimated values of $ \alph
 	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/errors2.eps}
 	\caption{\label{fig:error1} Distance between the estimated values of $ \alpha'$ and the actual theoretical values. }
 \end{figure}
-The great difference between the theoretical and the estimated values of $\alpha'$ for defocus smaller than -0.02 m indicates that the method is not reliable when the object is too close to the main lens. Therefore those values should be discarded.
+The great difference between the theoretical and the estimated values of $\alpha'$ for defocus smaller than -0.02 m indicates that the method is not reliable when the object is too close to the main lens. Therefore those values should be discarded. This methods represents a proff of concept for a more elaborate development in a future work. It only works with point sources.
 \section{Conclusions}
 This chapter showed the results obtained simulating a plenoptic 1.0 imaging system using the Fresnel simulation toolbox described in chapter \ref{chap:fresnel}. With these simulation has been possible to evaluate for the first time the effects of diffarctions on the final image. An important result of this chapter is that the post processing algorithms obtained from ray optics theoretical models can be used to process raw images generated with a wave optics approach. This wave optics approach also led to the evaluation of the effects of diffraction on a plenoptic 1.0 system. A lenslet can be considered as a circular aperture whose diffraction pattern os the well known airy disk. If the fringes of the diffraction pattern of a lenslet extend on the neighbouring lenslet, cross-talk arise. To avoid the minimum diameter of a lenslet as indicated in equation \ref{eq:min_diam}.\\
 The next step was to apply the rendering algorithm based on ray optics considerations already presented in literature and apply them on the raw images obtained from the wave optics simulations. All these methods gave the expected results proving that the simulation toolbox is capable to procuce realistic data. Particular attention was given to the depth estimation algorithm. With the help of the simulations it was possible to better understand and verify how the depth of an object can be estimated looking at the phase space. For a point source in focus the phase space look like a vertical straight line. if the point source is closer to the main lens the phase space will have a negative slope, while if it is further away from the main lens it will have a positive slope. This results perfectly match the theory. The synthetic refocus algorithm was also extensively analysed. Although this is not an original contribution to the field, it has been used to develop an original depth estimation method based on the creation of a focal stack of a point source refocused at different depth. It consist in refocusing the image of a point source at different depths and evaluate its power spectrum. The depth of the focal plane whose spectrum has the minimum energy will be value that better approximate the actual depth of the point source.\\

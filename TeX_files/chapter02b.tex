@@ -2,7 +2,7 @@
 \markboth{\MakeUppercase{Fresnel Simulation Toolbox: applications}}{}
 \label{chap:fresnel2}
 \section{Introduction}
-This chapter will describes in details the performance of the different free space propagation operators described in the previous chapter. Some examples of how they can be used to simulate of an optical system will also be presented and some example of the Matlab code used to run the simulations will be presented. Particular attention will be given to the differences between the different operators in terms of signal to noise ratio.
+This chapter will describes in details the performance of the different free space propagation operators described in the previous chapter. Some examples of how they can be used to simulate of an optical system will also be presented. Particular attention will be given to the differences between the different operators in terms of performance and signal to noise ratio.
 It will also be largely described how to simulate partially coherent light. An original method to simulate both spatial and temporal coherence will be presented. Results form the numerical simulations will also be presented to support the theoretical model and to optimise the parameters.
 In future developments of this work could be interesting to evaluate the performances of these methods analytically. But for the nature of this work is it enough to evaluate those performances using the simulations.
 \section{Performances of the Angular Spectrum Methods}
@@ -298,7 +298,7 @@ which is equal to $\tau=6.6\times10^{-17} s$.
  The image quality evaluated using the signal to noise ratio improves with the increasing of the sources used to generate the phase mask. However it reaches an asymptote after 250 sources. This is due to the fact that the interference effects due to low coherence decrease, improving image quality. 
  \newpage
  \subsection{Optimization of Temporal Coherence}
-The second simulation run aimed to define the optimum number of snapshots in order to remove temporal coherence effects. The random phase mask acts as a diffuser, and the resultant output field obtained by a single snapshot will present a low signal to noise ratio due to speckles, as shown in figure \ref{fig:speckle}
+The second simulation run aimed to define the investigate the effect of increasing the number of snapshots on temporal coherence effects. The random phase mask acts as a diffuser, and the resultant output field obtained by a single snapshot will present a low signal to noise ratio due to speckles, as shown in figure \ref{fig:speckle}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/USAF5iter.eps}

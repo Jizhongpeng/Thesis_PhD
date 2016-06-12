@@ -116,7 +116,7 @@ The system simulated is shown in figure \ref{fig:sys}. The main lens is in a 2f 
 	\includegraphics[width=.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/p20sys.eps}
 	\caption{\label{fig:sys} Ray diagram of the system simulated.  }
 \end{figure}
-The main objective of the simulation on a plenoptic 2.0 system was to investigate its behaviour at the diffraction limit as well as to better understand the trade-offs in resolution and how the different parameters affect it. Different combinations of the optical parameters of the system, including main lens aperture, micro array pitch and magnification,  have been tested. The modularity of the Fresnel simulation toolbox allows us to easily change the simulation parameters independently and collect results.
+The main objective of the simulation on a plenoptic 2.0 system was to investigate its behaviour at the diffraction limit as well as to better understand the trade-offs in resolution and how the different parameters affect it. Different combinations of the optical parameters of the system, including main lens aperture, micro array pitch and magnification,  have been tested. The Fresnel simulation toolbox allows us to easily change the simulation parameters independently and collect results.
 The system parameters are defined; these are the  dimension and the number of pixels on the sensor, the pitch and focal length of the lenslet array, the focal length of the main lens and the magnification $m$ of the micro array stage. The simulation toolbox is capable of automatically setting all other simulation parameters to respect the f-number matching between the main lens and the lenslet array. In a plenoptic 2.0 imaging system the f-number is matched when:
 \begin{equation}
 \label{eq:fmatch20}
@@ -308,7 +308,7 @@ If the separation between the point sources is doubled in the object plane they 
 	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/twopoints2.eps}.
 	\caption{\label{fig:twopoint2} The image on the top left shows  the main lens image of two point sources separated by the Rayleigh distance $2\delta x$. On the top right there is its corresponding rendered plenoptic image obtained with a magnification of 0.5. Doubling the Rayleigh distance the rendered image is at the limit of resolution, where the maximum of the Airy pattern of one point falls on the first zero of the second point. }
 \end{figure}
-These results obtained by simulating wave optics propagation in the plenoptic imaging system confirm the predictions made in section \ref{sec:performances} and it is the first experiment of this kind. The magnification of te lenslet affects the lateral resolution of the final rendered image. When imaging an object with a plenoptic 2.0 system the loss of resolution due to the magnification should be taken into account in order not to lose useful information in the sample, or a suitable lenslet array configuration should be chosen.
+These results obtained by simulating wave optics propagation in the plenoptic imaging system confirm the fact that the magnification affects the resolution of the final rendered image and it is the first experiment of this kind. The magnification of te lenslet affects the lateral resolution of the final rendered image. When imaging an object with a plenoptic 2.0 system the loss of resolution due to the magnification should be taken into account in order not to lose useful information in the sample, or a suitable lenslet array configuration should be chosen.
 \section{Frequency Analysis of a Focused Plenoptic System}
 \label{sec:freq}
 This section will describe the frequency response of a focused plenoptic system and its dependency on the magnification of the lenslet array stage. The spatial frequencies that are transferred from the object to the image plane in an optical system are defined by its modulation transfer function (MTF). The MTF is defined as the square modulus of the Fourier transform of the impulse response \textit{h(x,y)} of an optical system \cite{goodman2005introduction}. \\
@@ -349,11 +349,11 @@ The second set of simulations done evaluates the effects of the magnification in
 	$f_4$ & $2.22\times 10^4 m^{-1}$ \\
 	$f_5$ & $2.94\times 10^4 m^{-1}$ \\
 \end{tabular}
-\caption{\ref{tab:grating} Frequencies contained in the grating. The grating is not continous as well as the frequency variation.}
+\caption{\label{tab:grating} Frequencies contained in the grating. The grating is not continous as well as the frequency variation.}
 \end{table}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/pattern.eps}.
+	\includegraphics[width=0.5\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/pattern.eps}.
 	\caption{\label{fig:pattern} The object imaged in this simulation is a sinusoidal grating containing five different frequencies. }
 \end{figure}
 Figure \ref{fig:image05} shows the raw image, the main lens image and rendered images of the sinusoidal grating shown in figure \ref{fig:pattern}, imaged with a magnification of \textit{m = 0.5}. The two rendered images are obtained with the basic rendering explained in section \ref{sec:rendering}. To remove digital artefacts given by the tiling of the sub images patches on the rendered images a low pass Gaussian filter with $\sigma = 1.162\times 10^4 $ has been applied.   
@@ -371,7 +371,7 @@ The normalized intensity profile of the optical field at the main lens image pla
 As expected the amplitude of the oscillations in both the main lens image and the rendered image follow the profile of the modulation transfer function of the two stages.  \\
 Not all the frequency components of the object field are transmitted through the different stages of the plenoptic imaging system. In fact it acts as a low pass filter, whose bandwidth depends on the magnification used in the lenslet array stage. The low pass filtering action is shown in figure \ref{fig:block}.
 \\
-  It is interesting to see also that the rendered image presents some artefacts which are responsible for some extra frequencies present in the spectrum of the output rendered image. The cut off frequency of the imaging system with a magnification equal to 0.5 is $10^4 1/m$ therefore only the first two frequencies will be transmitted to the rendered image, as shown in figure \ref{fig:freq05}.
+  It is interesting to see also that the rendered image presents some artefacts which are responsible for some extra frequencies present in the spectrum of the output rendered image. The cut off frequency of the imaging system with a magnification equal to 0.5 is $10^4 m^{-1}$ therefore only the first two frequencies will be transmitted to the rendered image, as shown in figure \ref{fig:freq05}.
     If the magnification drops to \textit{m = 0.3} the bandwidth of the system gets narrower, and fewer frequencies are transmitted in the rendered image.
     \\
     Figure \ref{fig:image03} shows the raw image, the main lens image and rendered images of the sinusoidal grating shown in figure \ref{fig:pattern}
@@ -382,8 +382,8 @@ Not all the frequency components of the object field are transmitted through the
   \end{figure}
  \begin{figure}[H]
  	\centering
- 	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/MLI03SIN.eps}.
- 	\caption{\label{fig:image03} Top: on the left it is shown the raw sensor image, on the right the main lens image. Bottom: On the left there is the  rendered image, on the right the same image has been low pass filtered to remove some of the rendering artefacts. Magnification was 0.3. }
+ 	\includegraphics[width=1\textwidth]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/MLI03SINnew.eps}.
+ 	\caption{\label{fig:image03} Top: on the left it is shownthe main lens image , on the right the raw sensor image. Bottom: On the left there is the  rendered image, on the right the same image has been low pass filtered to remove some of the rendering artefacts. Magnification was 0.3. }
  \end{figure}
 As for the previous case figure \ref{fig:freq03} shows a comparison of the intensity profile of the main lens image with the rendered image one and of their respective power spectra: 
  \begin{figure}[H]

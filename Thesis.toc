@@ -66,7 +66,7 @@
 \contentsline {section}{\numberline {5.4}Impulse Response of a Focused Plenoptic system}{203}
 \contentsline {section}{\numberline {5.5}Two Point Resolution}{208}
 \contentsline {section}{\numberline {5.6}Frequency Analysis of a Focused Plenoptic System}{211}
-\contentsline {section}{\numberline {5.7}Conclusions}{225}
+\contentsline {section}{\numberline {5.7}Conclusions}{224}
 \contentsline {chapter}{\numberline {6}Light Field Microscope}{227}
 \contentsline {section}{\numberline {6.1}From Simulation to Reality}{227}
 \contentsline {section}{\numberline {6.2}Description of the System}{229}
