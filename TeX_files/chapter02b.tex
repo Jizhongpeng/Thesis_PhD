@@ -94,13 +94,13 @@ The impulse response for a point source as input will be computed using each of 
 	 \begin{figure}[H]
 	 	\begin{center}
 	 		\begin{tabular}{c}
-	 			\includegraphics[height=15cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/methodspoint1.eps}
+	 			\includegraphics[height=15cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/methodspoint1new.eps}
 	 		\end{tabular}
 	 	\end{center}
 	 	\caption{ \label{fig:resultspoint11} 
-	 		From top to Bottom: Image and intensity cross section of a point source according to multi step method, angular spectrum method, band limited angular spectrum method and corrected band limited angular spectrum method. }
+	 		From top to Bottom: Image and intensity cross section of a point source according to multi step method, angular spectrum method, band limited angular spectrum method and corrected band limited angular spectrum method. In red is plotted the theoretical Airy pattern for reference. }
 	 \end{figure} 
-	From figure \ref{fig:resultspoint11} it can be seen that in the case of the MSF method the cross section of the impulse response does not go to zero because if additive background noise. The response of the AS method has a high frequency noise components superimposed to the diffraction pattern while the BL method reduces the noise due to aliasing of the transfer function in the AS case as can be seen comparing the two cross sections. Both the BL and the CBL methods present no background noise and in the high frequency noise is reduced with respect to the AS case. Another parameter to evaluate the accuracy of these methods is the position of the Airy disk first minimum. It is given by \cite{goodman2005introduction,pedrotti1993introduction}:
+	From figure \ref{fig:resultspoint11} it can be seen that in the case of the MSF method the cross section of the impulse response does not go to zero because if additive background noise. In addition to that an offset is present in the image generated. This represent a reason more to discard the multi-step method form any future simulation. The response of the AS method has a high frequency noise components superimposed to the diffraction pattern while the BL method reduces the noise due to aliasing of the transfer function in the AS case as can be seen comparing the two cross sections. Both the BL and the CBL methods present no background noise and in the high frequency noise is reduced with respect to the AS case. Another parameter to evaluate the accuracy of these methods is the position of the Airy disk first minimum. It is given by \cite{goodman2005introduction,pedrotti1993introduction}:
 	 \begin{equation}
 	 \label{eq:airy}
 	 x_{min}=1.22\dfrac{\lambda z}{D}
@@ -109,6 +109,7 @@ The impulse response for a point source as input will be computed using each of 
 	 Without considering the MSF case that is too noisy and does not present zeros, the position of the first minimum is the other cases are:\\
 	 \begin {table}
 	 \begin{center}
+	 	\label{tab:minimum}
 	 \begin{tabular}{ l | r }
 	 	
 	 	\hline			
@@ -117,22 +118,41 @@ The impulse response for a point source as input will be computed using each of 
 	 	CBL & 77.5 $\mu m$ \\
 	 	\hline 
 	 		\end{tabular}
+	 			\caption{Position of the first minimum for all the three different angular spectrum methods. }
 	\end{center}
 \end{table}
-	As expected for both the band limited angular spectrum methods (BL and CBL) the Airy Disk is slightly wider due to the low pass filtering action that transfer function has undergone. However from a qualitative analysis noise is reduced with the band limitation as shown in figure
+	As expected for both the band limited angular spectrum methods (BL and CBL) the Airy Disk is slightly wider due to the low pass filtering action that transfer function has undergone.  However noise is reduced with the band limitation as shown in figure
 	 \ref{fig:resultspoint11}.
+	 The noise of each diffraction patter has been estimated considering as a reference the theoretical Airy patter. After subtracting it to the calculated intensity profile, the variance has been used to estimate the noise. Values of the variance for the three different angular spectrum methods are shown in table \ref{tab:noisemethods} :
+	 	 \begin {table}
+	 	 \begin{center}
+	 	 	\label{tab:noisemethods}
+	 	 	\begin{tabular}{ l | r }
+	 	 		
+	 	 		\hline	
+	 	 		Method & variance \\
+	 	 		\hline		
+	 	 		AS & 0.00120000 \\
+	 	 		BL & 0.00054646 \\
+	 	 		CBL & 0.00056632 \\
+	 	 		\hline 
+	 	 	\end{tabular}
+	 	 	\caption{Noise estimation for the three different angular spectrum methods. }
+	 	 \end{center}
+	 	\end{table}
 	 To better understand how the resolution changes with the different methods, it is worth to have a look at the Fourier transform of the images shown in figure \ref{fig:resultspoint11}. The Fourier transform of the impulse response of a system give its frequency response. The shape of the frequency response gives information about how the frequency components of the input signal are modulated and transferred to the output signal. When this function goes to zero the correspondent frequency value is called the cutoff frequency. For frequencies higher than the cutoff frequency, all the information included in the input signal is lost. Results are shown in figure \ref{fig:resultspoint2}. The graphs are symmetric with respect to the zero frequency, therefore only the positive frequencies are shown.
 	 
 	 \begin{figure}[h]
 	 	\begin{center}
 	 		\begin{tabular}{c}
-	 			\includegraphics[height=8cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/MTF.eps}
+	 			\includegraphics[height=8cm]{C:/Users/Massimo/Documents/Thesis/Thesis_PhD/MTFnew.eps}
 	 		\end{tabular}
 	 	\end{center}
 	 	\caption{ \label{fig:resultspoint2} 
-	 		From top left to bottom right: Power spectrum of the image of a point source obtained with the MSF method, the AS method, the BL method and the CBL method . }
+	 		From top left to bottom right: Power spectrum of the image of a point source obtained with the MSF method, the AS method, the BL method and the CBL method. In red is plotted the theoretical Airy pattern power spectrum for reference. }
 	 \end{figure} 
-	From a comparison of the power spectra in figure \ref{fig:resultspoint2} it is possible to note the difference in shape of the power spectrum of the MSF method, that goes to zero slower than the angular spectrum methods spectra. These three figures present as expected the same shape since for low frequency the three angular spectrum methods are identical, with the difference of the frequency components after the cutoff frequency due to the fact that the BL and the CBL have narrower bandwidths. In the AS method graph a strong peak is present at a frequency of $10^5 m^{-1}$ due to digital artefacts arising from aliasing effects. This peak disappears in the other two band limited implementations of the angular spectrum. 
+	From a comparison of the power spectra in figure \ref{fig:resultspoint2} it is possible to note the difference in shape of the power spectrum of the MSF method, that goes to zero slower than the angular spectrum methods spectra. These three figures present as expected the same shape since for low frequency the three angular spectrum methods are identical, with the difference of the frequency components after the cut-off frequency due to the fact that the BL and the CBL have narrower bandwidths. In the AS method graph a strong peak is present at a frequency of $10^5 m^{-1}$ due to digital artefacts arising from aliasing effects. This peak disappears in the other two band limited implementations of the angular spectrum. 
+	It is interesting that all four power spectra present a dispersion of the energy towards high frequencies, indicating that a noise is not avoidable in the simulation toolbox.
 \section{Coherence}
 \label{sec:coherence}
 The Fresnel simulation toolbox has been designed to analyse a light field imaging system. Since all current and most future applications of plenoptic systems will have incoherently illuminated objects, the simulation of such a systems should take it into account. Therefore the decision to develop an algorithm to simulate light propagating in a low state of coherence was taken. In addition to that low coherent illumination avoids interference pattern cross talk between neighbours lenslets that might decrease the quality of the final image. \\

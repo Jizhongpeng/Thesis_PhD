@@ -34,14 +34,14 @@
 \contentsline {subsection}{\numberline {3.3.2}Image of a Point Source}{123}
 \contentsline {section}{\numberline {3.4}Coherence}{128}
 \contentsline {subsection}{\numberline {3.4.1}Temporal Coherence}{129}
-\contentsline {subsection}{\numberline {3.4.2}Spatial Coherence}{129}
+\contentsline {subsection}{\numberline {3.4.2}Spatial Coherence}{130}
 \contentsline {subsection}{\numberline {3.4.3}Simulation of Spatial Coherence}{131}
-\contentsline {subsection}{\numberline {3.4.4}Simulation of Temporal Coherence}{137}
-\contentsline {section}{\numberline {3.5}Optimization of Coherence Parameters}{138}
-\contentsline {subsection}{\numberline {3.5.1}Optimization of Spatial Coherence}{138}
-\contentsline {subsection}{\numberline {3.5.2}Optimization of Temporal Coherence}{142}
-\contentsline {subsection}{\numberline {3.5.3}Coherent Imaging vs Incoherent Imaging}{145}
-\contentsline {section}{\numberline {3.6}Conclusions}{146}
+\contentsline {subsection}{\numberline {3.4.4}Simulation of Temporal Coherence}{138}
+\contentsline {section}{\numberline {3.5}Optimization of Coherence Parameters}{139}
+\contentsline {subsection}{\numberline {3.5.1}Optimization of Spatial Coherence}{139}
+\contentsline {subsection}{\numberline {3.5.2}Optimization of Temporal Coherence}{143}
+\contentsline {subsection}{\numberline {3.5.3}Coherent Imaging vs Incoherent Imaging}{146}
+\contentsline {section}{\numberline {3.6}Conclusions}{147}
 \contentsline {chapter}{\numberline {4}Simulations of a Plenoptic 1.0 System}{149}
 \contentsline {section}{\numberline {4.1}Introduction}{149}
 \contentsline {section}{\numberline {4.2}Description of the System}{150}

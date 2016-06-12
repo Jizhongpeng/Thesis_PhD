@@ -18,42 +18,42 @@
 \nomenclatureentry{a$D$@[{$D$}]\begingroup Aperture diameter of the main lens\nomeqref {1.23}|nompageref}{80}
 \nomenclatureentry{a$I$@[{$I$}]\begingroup Intensity of the optical field\nomeqref {1.23}|nompageref}{80}
 \nomenclatureentry{a$E$@[{$E$}]\begingroup Radiance\nomeqref {1.23}|nompageref}{80}
-\nomenclatureentry{a$\overrightarrow{E}$@[{$\overrightarrow{E}$}]\begingroup Electric field\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\overrightarrow{H}$@[{$\overrightarrow{H}$}]\begingroup Magnetic field\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\epsilon$@[{$\epsilon$}]\begingroup Electrical permittivity\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\mu$@[{$\mu$}]\begingroup Magnetic permittivity\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\nabla$@[{$\nabla$}]\begingroup Laplacian operator\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\widehat{i},\widehat{j}$, $\widehat{k}$@[{$\widehat{i},\widehat{j}$, $\widehat{k}$}]\begingroup unit vectors\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$n$@[{$n$}]\begingroup Refractive index\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$c$@[{$c$}]\begingroup Speed of light in vacuum\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$t$@[{$t$}]\begingroup Time\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$u$@[{$u$}]\begingroup Field disturbance\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\nu$@[{$\nu$}]\begingroup Optical frequency\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\phi$@[{$\phi$}]\begingroup Phase\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$k$@[{$k$}]\begingroup Wave number\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$U$@[{$U$}]\begingroup Complex field\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\eta, \chi$@[{$\eta, \chi$}]\begingroup Object space coordinates\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\sigma$@[{$\sigma$}]\begingroup Area of the aperture\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$f_x, f_y$@[{$f_x, f_y$}]\begingroup Spatial frequencies\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\nu_x, \nu_y$@[{$\nu_x, \nu_y$}]\begingroup Local spatial frequencies\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{aSNR@[{SNR}]\begingroup Signal to noise ratio\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\Delta$@[{$\Delta$}]\begingroup Thickness function\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$t_{lens}$@[{$t_{lens}$}]\begingroup Transmission of the lens\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{aR@[{R}]\begingroup Radius of curvature of a lens surface\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$N$@[{$N$}]\begingroup Number of samples\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$r$@[{$r$}]\begingroup Radius of a lens aperture\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$F_\#$@[{$F_\#$}]\begingroup F-number\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\nu_c$@[{$\nu_c$}]\begingroup Optical cut-off frequency\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$x_{min}$@[{$x_{min}$}]\begingroup Position of Airy Disk first minimum\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\Gamma$@[{$\Gamma$}]\begingroup Autocorrelation function\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\tau$@[{$\tau$}]\begingroup Coherence time\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$A$@[{$A$}]\begingroup Area\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\Delta S$@[{$\Delta S$}]\begingroup Area of the emitting source\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$d\Sigma$@[{$d\Sigma$}]\begingroup Elemental area\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$C$@[{$C$}]\begingroup Coherence index\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$d_c$@[{$d_c$}]\begingroup Distance of propagation in the coherence algorithm\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$W$@[{$W$}]\begingroup Size of the input optical field\nomeqref {3.9}|nompageref}{147}
-\nomenclatureentry{a$\iota$@[{$\iota$}]\begingroup Incoherence degree\nomeqref {3.9}|nompageref}{147}
+\nomenclatureentry{a$\overrightarrow{E}$@[{$\overrightarrow{E}$}]\begingroup Electric field\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\overrightarrow{H}$@[{$\overrightarrow{H}$}]\begingroup Magnetic field\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\epsilon$@[{$\epsilon$}]\begingroup Electrical permittivity\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\mu$@[{$\mu$}]\begingroup Magnetic permittivity\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\nabla$@[{$\nabla$}]\begingroup Laplacian operator\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\widehat{i},\widehat{j}$, $\widehat{k}$@[{$\widehat{i},\widehat{j}$, $\widehat{k}$}]\begingroup unit vectors\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$n$@[{$n$}]\begingroup Refractive index\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$c$@[{$c$}]\begingroup Speed of light in vacuum\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$t$@[{$t$}]\begingroup Time\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$u$@[{$u$}]\begingroup Field disturbance\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\nu$@[{$\nu$}]\begingroup Optical frequency\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\phi$@[{$\phi$}]\begingroup Phase\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$k$@[{$k$}]\begingroup Wave number\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$U$@[{$U$}]\begingroup Complex field\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\eta, \chi$@[{$\eta, \chi$}]\begingroup Object space coordinates\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\sigma$@[{$\sigma$}]\begingroup Area of the aperture\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$f_x, f_y$@[{$f_x, f_y$}]\begingroup Spatial frequencies\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\nu_x, \nu_y$@[{$\nu_x, \nu_y$}]\begingroup Local spatial frequencies\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{aSNR@[{SNR}]\begingroup Signal to noise ratio\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\Delta$@[{$\Delta$}]\begingroup Thickness function\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$t_{lens}$@[{$t_{lens}$}]\begingroup Transmission of the lens\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{aR@[{R}]\begingroup Radius of curvature of a lens surface\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$N$@[{$N$}]\begingroup Number of samples\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$r$@[{$r$}]\begingroup Radius of a lens aperture\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$F_\#$@[{$F_\#$}]\begingroup F-number\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\nu_c$@[{$\nu_c$}]\begingroup Optical cut-off frequency\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$x_{min}$@[{$x_{min}$}]\begingroup Position of Airy Disk first minimum\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\Gamma$@[{$\Gamma$}]\begingroup Autocorrelation function\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\tau$@[{$\tau$}]\begingroup Coherence time\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$A$@[{$A$}]\begingroup Area\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\Delta S$@[{$\Delta S$}]\begingroup Area of the emitting source\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$d\Sigma$@[{$d\Sigma$}]\begingroup Elemental area\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$C$@[{$C$}]\begingroup Coherence index\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$d_c$@[{$d_c$}]\begingroup Distance of propagation in the coherence algorithm\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$W$@[{$W$}]\begingroup Size of the input optical field\nomeqref {3.9}|nompageref}{148}
+\nomenclatureentry{a$\iota$@[{$\iota$}]\begingroup Incoherence degree\nomeqref {3.9}|nompageref}{148}
 \nomenclatureentry{a$d_{Airy}$@[{$d_{Airy}$}]\begingroup Airy disk diameter\nomeqref {4.14}|nompageref}{184}
 \nomenclatureentry{a$A'$@[{$A'$}]\begingroup Synthetic aperture\nomeqref {4.14}|nompageref}{184}
 \nomenclatureentry{a$ \alpha'$@[{$ \alpha'$}]\begingroup Refocusing factor\nomeqref {4.14}|nompageref}{184}
